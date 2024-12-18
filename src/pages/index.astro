@@ -1,11 +1,21 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/home/Hero.astro";
+import Services from "../components/home/Services.astro";
+import Venues from "../components/home/Venues.astro";
+import Testimonials from "../components/home/Testimonials.astro";
+import Hero2 from "../components/home/Hero2.astro";
+import Testimonials2 from "../components/home/Testimonials2.astro";
+import CTA from "../components/home/CTA.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<MainLayout
+  title="Pixxel City - Premium Photography Studio in Nagpur"
+  description="Experience premium photography services at Pixxel City. We offer mesmerizing sets and quirky props for indoor and outdoor shoots in Nagpur."
+>
+  <Hero2 />
+  <Services />
+  <Venues />
+  <Testimonials2 />
+  <CTA />
+</MainLayout>

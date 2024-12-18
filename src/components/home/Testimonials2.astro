@@ -1,0 +1,51 @@
+---
+import Container from "../common/Container.astro";
+import SectionHeading from "../common/SectionHeading.astro";
+import TestimonialSection from "./TestimonialSlider";
+
+const testimonials = [
+  {
+    name: "Priya Sharma",
+    role: "Pre-Wedding Client",
+    content:
+      "The pre-wedding shoot experience at Pixxel City was absolutely magical. The sets are stunning and the team is incredibly professional.",
+    rating: 5,
+    venueImage:
+      "https://pixxelcity.com/wp-content/uploads/2024/05/Bed-Room-1022x1536.jpg",
+    setName: "Light House Romance",
+  },
+  {
+    name: "Rahul Verma",
+    role: "Brand Shoot Client",
+    content:
+      "Outstanding studio with top-notch facilities. The variety of sets helped us create diverse content for our brand.",
+    rating: 5,
+    venueImage:
+      "https://pixxelcity.com/wp-content/uploads/2024/11/Snapinsta.app_361573521_1326641841330211_9193917804658320017_n_1080.jpg",
+    setName: "Brand Shoot",
+  },
+  {
+    name: "Anita Patel",
+    role: "Anniversary Shoot Client",
+    content:
+      "Celebrated our anniversary here and the photos turned out beautiful. The sets are well-maintained and the staff is very helpful.",
+    rating: 5,
+    venueImage:
+      "https://pixxelcity.com/wp-content/uploads/2024/05/Anjali-Ashish-Nirmarkar-films5-1024x1536.jpg",
+    setName: "Dreamy Walkway",
+  },
+];
+---
+
+<Container class="pb-4">
+  {/* Section Header */}
+  <div class="max-w-7xl mx-auto text-center mb-16">
+    <SectionHeading
+      title="Client Stories"
+      subtitle="Creating timeless memories with our cherished clients"
+    />
+  </div>
+  <section class="relative">
+    <TestimonialSection client:load testimonials={testimonials} />
+  </section>
+</Container>

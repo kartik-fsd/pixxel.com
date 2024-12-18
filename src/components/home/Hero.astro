@@ -1,0 +1,80 @@
+---
+import { Camera, ArrowRight } from "lucide-react";
+import { CONTACT, COMPANY } from "../../utils/constants";
+import Container from "../common/Container.astro";
+---
+
+<section class="relative overflow-hidden bg-primary/5 py-24 sm:py-32">
+  <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+
+  <Container>
+    <div class="mx-auto max-w-3xl text-center relative z-10">
+      <div
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-8"
+      >
+        <Camera className="h-4 w-4" />
+        <span class="text-sm font-medium">{COMPANY.tagline}</span>
+      </div>
+
+      <h1
+        class="text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl font-display"
+      >
+        <span class="block text-primary">Capture Your</span>
+        <span
+          class="block bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent"
+        >
+          Perfect Moments
+        </span>
+      </h1>
+
+      <p
+        class="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-light"
+      >
+        {COMPANY.description}
+      </p>
+
+      <div
+        class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
+      >
+        <a
+          href={`tel:${CONTACT.phone}`}
+          class="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90 group"
+        >
+          <Camera className="h-5 w-5 mr-2" />
+          <span>Book Your Shoot</span>
+          <ArrowRight
+            className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1"
+          />
+        </a>
+        <a
+          href="#services"
+          class="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+        >
+          Explore Services
+        </a>
+      </div>
+
+      <div
+        class="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-3xl mx-auto"
+      >
+        {
+          [
+            { label: "Happy Clients", value: "500+" },
+            { label: "Unique Sets", value: "40+" },
+            { label: "Years Experience", value: "5+" },
+            { label: "Photo Sessions", value: "1000+" },
+          ].map((stat) => (
+            <div class="text-center">
+              <div class="text-4xl font-display font-bold text-primary mb-2">
+                {stat.value}
+              </div>
+              <div class="text-sm text-muted-foreground font-light">
+                {stat.label}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </Container>
+</section>

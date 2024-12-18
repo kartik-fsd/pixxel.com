@@ -1,0 +1,167 @@
+---
+import { Camera, ArrowRight } from "lucide-react";
+import { CONTACT, COMPANY } from "../../utils/constants";
+import Container from "../common/Container.astro";
+import Image from "astro/components/Image.astro";
+import ImageMarquee from "../../components/home/Marquee";
+
+// Image dimensions
+const MAIN_IMAGE_WIDTH = 1000;
+const MAIN_IMAGE_HEIGHT = 500;
+const MARQUEE_IMAGE_WIDTH = 400;
+const MARQUEE_IMAGE_HEIGHT = 300;
+
+// Images for the marquee
+const marqueeImages = [
+  {
+    src: "https://pixxelcity.com/wp-content/uploads/2024/11/IMG_20241108_181458_617.webp",
+    alt: "Maternity Photography",
+    category: "Maternity",
+    width: MARQUEE_IMAGE_WIDTH,
+    height: MARQUEE_IMAGE_HEIGHT,
+  },
+  {
+    src: "https://pixxelcity.com/wp-content/uploads/2024/05/Vipin-Photography-2-Retro-Kitchen-scaled.jpg",
+    alt: "Pre-wedding Shoot",
+    category: "Pre-Wedding",
+    width: MARQUEE_IMAGE_WIDTH,
+    height: MARQUEE_IMAGE_HEIGHT,
+  },
+  {
+    src: "https://pixxelcity.com/wp-content/uploads/2024/05/0C9A6819-scaled.jpg",
+    alt: "Video Shoot",
+    category: "Long-Video",
+    width: MARQUEE_IMAGE_WIDTH,
+    height: MARQUEE_IMAGE_HEIGHT,
+  },
+];
+---
+
+<section class="relative overflow-hidden bg-background py-6 lg:py-10">
+  <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+
+  <Container>
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Content Side -->
+      <div class="relative z-10 space-y-8">
+        <!-- Studio Badge -->
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary"
+        >
+          <Camera class="h-4 w-4" />
+          <span class="text-sm font-medium">{COMPANY.tagline}</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="space-y-6">
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl font-display font-bold tracking-tight"
+          >
+            <span class="block text-primary">Capture Your</span>
+            <span
+              class="block bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent"
+            >
+              Perfect Moments
+            </span>
+          </h1>
+          <p class="text-lg text-muted-foreground max-w-lg">
+            {COMPANY.description}
+          </p>
+        </div>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href={`tel:${CONTACT.phone}`}
+            class="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90 group"
+          >
+            Book Your Shoot
+            <ArrowRight
+              class="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1"
+            />
+          </a>
+          <a
+            href="#services"
+            class="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+          >
+            Explore Services
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-4 gap-8 pt-8 border-t border-neutral-200"
+        >
+          {
+            [
+              { label: "Happy Clients", value: "500+" },
+              { label: "Unique Sets", value: "40+" },
+              { label: "Years Experience", value: "5+" },
+              { label: "Photo Sessions", value: "1000+" },
+            ].map((stat) => (
+              <div class="text-center">
+                <div class="text-4xl font-display font-bold text-primary mb-2">
+                  {stat.value}
+                </div>
+                <div class="text-sm text-muted-foreground font-light">
+                  {stat.label}
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Image Gallery Side -->
+      <div class="relative">
+        <!-- Main Large Image -->
+        <div
+          class="relative aspect-[4/2] mb-4 rounded-lg overflow-hidden shadow-xl"
+        >
+          <Image
+            src="https://pixxelcity.com/wp-content/uploads/2024/11/Snapinsta.app_409177592_911120947024505_1519823328981384121_n_1080.jpg"
+            alt="Featured Photography"
+            width={MAIN_IMAGE_WIDTH}
+            height={MAIN_IMAGE_HEIGHT}
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"
+          >
+          </div>
+        </div>
+
+        <!-- Marquee Component -->
+        <ImageMarquee images={marqueeImages} client:load />
+
+        <!-- Decorative Elements -->
+        <div
+          class="absolute -top-8 -right-8 w-64 h-64 bg-primary/5 rounded-full blur-3xl"
+        >
+        </div>
+        <div
+          class="absolute -bottom-8 -left-8 w-64 h-64 bg-primary/5 rounded-full blur-3xl"
+        >
+        </div>
+      </div>
+    </div>
+  </Container>
+
+  <!-- Decorative Border -->
+  <div
+    class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent"
+  >
+  </div>
+</section>
+
+<style>
+  .bg-grid-pattern {
+    background-size: 30px 30px;
+    background-image: linear-gradient(
+        to right,
+        hsl(var(--primary) / 0.1) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, hsl(var(--primary) / 0.1) 1px, transparent 1px);
+  }
+</style>

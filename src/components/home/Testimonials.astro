@@ -1,0 +1,131 @@
+---
+import { Star, Quote, ArrowRight } from 'lucide-react';
+import Container from '../common/Container.astro';
+import Section from '../common/Section.astro';
+import SectionHeading from '../common/SectionHeading.astro';
+import Image from 'astro/components/Image.astro';
+
+const testimonials = [
+  {
+    name: 'Priya Sharma',
+    role: 'Pre-Wedding Client',
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400',
+    portfolioImage: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=800',
+    content: 'The pre-wedding shoot experience at Pixxel City was absolutely magical. The sets are stunning and the team is incredibly professional.',
+    rating: 5
+  },
+  {
+    name: 'Rahul Verma',
+    role: 'Brand Shoot Client',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400',
+    portfolioImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800',
+    content: 'Outstanding studio with top-notch facilities. The variety of sets helped us create diverse content for our brand.',
+    rating: 5
+  },
+  {
+    name: 'Anita Patel',
+    role: 'Anniversary Shoot Client',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400',
+    portfolioImage: 'https://images.unsplash.com/photo-1537633552985-df8429e8048b?q=80&w=800',
+    content: 'Celebrated our anniversary here and the photos turned out beautiful. The sets are well-maintained and the staff is very helpful.',
+    rating: 5
+  },
+];
+---
+
+<Section class="relative overflow-hidden bg-primary/5 ">
+  <!-- Decorative elements -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(var(--gold-rgb),0.03),transparent_70%)]"/>
+  
+
+  <Container>
+    <SectionHeading
+      title="Client Stories"
+      subtitle="Creating timeless memories with our cherished clients"
+    />
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+      {testimonials.map((testimonial) => (
+        <div class="group relative">
+          <!-- Card with portfolio image -->
+          <div class="relative h-[28rem] overflow-hidden rounded-2xl bg-card border border-border/5">
+            <!-- Portfolio image background -->
+            <div class="absolute inset-0">
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-background/95 to-background/50"/>
+              <Image
+                width={400}
+                height={500} 
+                src={testimonial.portfolioImage} 
+                alt="Portfolio shot"
+                class="h-full w-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+
+            <!-- Content -->
+            <div class="relative h-full p-8 flex flex-col">
+              <!-- Quote icon -->
+              <div class="mb-4">
+                <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                  <Quote class="h-5 w-5 text-primary" />
+                </div>
+              </div>
+
+
+
+              <!-- Testimonial text -->
+              <p class="text-base text-muted-foreground mb-8 flex-grow">
+                "{testimonial.content}"
+              </p>
+
+              <!-- Client info -->
+              <div class="flex items-center gap-4 group">
+                <div class="relative h-14 w-14 overflow-hidden rounded-full border-2 border-gold-light/20">
+                  <Image
+                  width={400}
+                  height={500} 
+                    src={testimonial.image} 
+                    alt={testimonial.name} 
+                    class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <div>
+                  <div class="font-display text-lg text-foreground">{testimonial.name}</div>
+                  <div class="text-sm text-muted-foreground">{testimonial.role}</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Decorative gradient line -->
+            <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent"></div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Testimonial CTA -->
+    <div class="mt-16 text-center">
+        <a
+          href="/testimonials"
+          class="inline-flex items-center justify-center px-8 py-3 rounded-full 
+                 bg-gradient-to-r from-primary/90 to-primary text-background text-sm font-medium 
+                 transition-all duration-300 hover:shadow-lg hover:bg-primary/90 
+                 group hover:shadow-gold/20 hover:-translate-y-0.5 cursor-pointer"
+          aria-label="View all stories"
+        >
+          View All Stories
+          <ArrowRight 
+            className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" 
+          />
+        </a>
+      </div>
+      
+  </Container>
+</Section>
+
+<style>
+  /* Optional: Add custom animations */
+  @keyframes floatUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+  }
+</style>
