@@ -17,11 +17,11 @@ const CTASection = () => {
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            className="bg-[#FF1F78]/10 text-[#FF1F78] px-6 py-2 rounded-full mb-8 inline-flex items-center gap-2"
+            className="bg-primary/10 text-primary px-6 py-2 rounded-full mb-8 inline-flex items-center gap-2"
           >
-            <Star className="w-4 h-4 fill-[#FF1F78]" />
+            <Star className="w-4 h-4 fill-primary/20" />
             <span className="text-sm font-medium">Limited Time Offer</span>
-            <Star className="w-4 h-4 fill-[#FF1F78]" />
+            <Star className="w-4 h-4 fill-primary/20" />
           </motion.div>
 
           {/* Main CTA Content */}
@@ -49,7 +49,8 @@ const CTASection = () => {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="group flex items-center gap-2 bg-[#FF1F78] text-white px-8 py-4 rounded-full font-medium"
+                className="group flex items-center 
+                gap-2 bg-gradient-to-r from-primary to-primary/60 text-white px-8 py-4 rounded-full font-medium"
               >
                 <Calendar className="w-5 h-5" />
                 <span>Book Your Session</span>

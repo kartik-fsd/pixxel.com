@@ -14,6 +14,11 @@ export const CONTACT = {
 export const COMPANY = {
     name: 'Pixxel City',
     tagline: 'Premium Photography Studio in Nagpur',
+    // Alternative options:
+    // 'Crafting Magical Moments in Premium Photography Sets'
+    // 'Nagpur's Elite Photography Set Experience'
+    // 'Your Story, Our Signature Sets'
+    //'Where Dreams Transform Into Timeless Frames
     description: 'We provide mesmerizing sets and quirky props for both indoor and outdoor shoots, bringing your dreams to life.',
 };
 
