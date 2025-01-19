@@ -10,9 +10,10 @@ const { title, subtitle, class: className } = Astro.props;
 
 <div class:list={["text-center max-w-3xl mx-auto mb-10 lg:mb-14", className]}>
   <h2
-    class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl font-display bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent"
+    class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl font-display
+     bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent pb-2"
   >
     {title}
   </h2>
-  {subtitle && <p class="mt-4 text-lg text-muted-foreground">{subtitle}</p>}
+  {subtitle && <p class="mt-2 text-lg text-muted-foreground">{subtitle}</p>}
 </div>

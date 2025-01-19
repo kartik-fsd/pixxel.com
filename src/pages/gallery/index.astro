@@ -1,0 +1,29 @@
+---
+import Gallery from "../../components/gallery";
+import MainLayout from "../../layouts/MainLayout.astro"; // Your main layout
+import { gallerySEO } from "../../SEO/gallerySEO"; // SEO metadata for the gallery page
+---
+
+<MainLayout seo={gallerySEO}>
+  <!-- Gallery Component -->
+  <Gallery client:load />
+
+  <!-- Call-to-Action Section -->
+  <section class="bg-card py-24">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+        Ready to Create Something Amazing?
+      </h2>
+      <p class="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+        Book your preferred location for your next photoshoot or video
+        production. Our premium venues await your creative vision.
+      </p>
+      <a
+        href="/contact"
+        class="inline-flex items-center justify-center h-11 px-8 font-medium bg-primary text-white rounded-full hover:bg-primary/90 transition-colors"
+      >
+        Book a Session
+      </a>
+    </div>
+  </section>
+</MainLayout>

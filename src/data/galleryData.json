@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "type": "photo",
+    "imageUrl": "https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg",
+    "title": "Ancient Temple Gardens",
+    "category": "pre-wedding",
+    "description": "A serene pre-wedding location featuring traditional architecture and lush gardens.",
+    "location": "Seminary Hills, Nagpur",
+    "photographer": "Rahul Pandit"
+  },
+  {
+    "id": "2",
+    "type": "photo",
+    "imageUrl": "https://images.pexels.com/photos/2403568/pexels-photo-2403568.jpeg",
+    "title": "Modern Urban Rooftop",
+    "category": "fashion",
+    "description": "Contemporary rooftop setting with cityscape views, perfect for fashion shoots.",
+    "location": "Sitabuldi, Nagpur",
+    "photographer": "Priya Sharma"
+  },
+  {
+    "id": "3",
+    "type": "photo",
+    "imageUrl": "https://images.pexels.com/photos/1454769/pexels-photo-1454769.jpeg",
+    "title": "Vintage Palace Interior",
+    "category": "pre-wedding",
+    "description": "Luxurious palace interiors with intricate designs and royal ambiance.",
+    "location": "Civil Lines, Nagpur",
+    "photographer": "Amit Kumar"
+  },
+  {
+    "id": "4",
+    "type": "video",
+    "imageUrl": "https://images.pexels.com/photos/3014856/pexels-photo-3014856.jpeg",
+    "title": "Botanical Paradise",
+    "category": "nature",
+    "description": "Exotic botanical gardens with rare flowers and natural landscapes.",
+    "location": "Japanese Garden, Nagpur",
+    "photographer": "Sneha Patel"
+  },
+  {
+    "id": "5",
+    "type": "photo",
+    "imageUrl": "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg",
+    "title": "Industrial Art Space",
+    "category": "fashion",
+    "description": "Raw industrial setting with artistic elements, perfect for edgy shoots.",
+    "location": "MIDC Area, Nagpur",
+    "photographer": "Vikram Singh"
+  },
+  {
+    "id": "6",
+    "type": "photo",
+    "imageUrl": "https://images.pexels.com/photos/911758/pexels-photo-911758.jpeg",
+    "title": "Heritage Mansion",
+    "category": "traditional",
+    "description": "Colonial-era mansion with classic architecture and period features.",
+    "location": "Dharampeth, Nagpur",
+    "photographer": "Ananya Das"
+  },
+  {
+    "id": "7",
+    "type": "video",
+    "imageUrl": "https://images.pexels.com/photos/15861597/pexels-photo-15861597/free-photo-of-portrait-of-a-wedding-couple-on-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "title": "Sunlit Beach Vibes",
+    "category": "nature",
+    "description": "A sunlit beach location with pristine waters, ideal for nature-inspired shoots.",
+    "location": "Tadoba, Nagpur",
+    "photographer": "Kavya Rao"
+  },
+  {
+    "id": "9",
+    "type": "photo",
+    "imageUrl": "https://images.pexels.com/photos/2437291/pexels-photo-2437291.jpeg",
+    "title": "Lush Green Meadows",
+    "category": "nature",
+    "description": "Vast meadows surrounded by scenic hills, perfect for outdoor photography.",
+    "location": "Kamptee Road, Nagpur",
+    "photographer": "Ritu Sharma"
+  },
+  {
+    "id": "10",
+    "type": "video",
+    "imageUrl": "https://images.pexels.com/photos/30035589/pexels-photo-30035589/free-photo-of-rustic-outdoor-wedding-with-bride-and-groom.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "title": "Rustic Farmhouse Charm",
+    "category": "pre-wedding",
+    "description": "A rustic farmhouse with wooden accents and open fields.",
+    "location": "Amravati Road, Nagpur",
+    "photographer": "Shyam Patel"
+  }
+]

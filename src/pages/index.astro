@@ -1,18 +1,14 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Hero from "../components/home/Hero.astro";
 import Services from "../components/home/Services.astro";
 import Venues from "../components/home/Venues.astro";
-import Testimonials from "../components/home/Testimonials.astro";
 import Hero2 from "../components/home/Hero2.astro";
 import Testimonials2 from "../components/home/Testimonials2.astro";
 import CTA from "../components/home/CTA.astro";
+import { defaultSEO } from "../SEO";
 ---
 
-<MainLayout
-  title="Pixxel City - Premium Photography Studio in Nagpur"
-  description="Experience premium photography services at Pixxel City. We offer mesmerizing sets and quirky props for indoor and outdoor shoots in Nagpur."
->
+<MainLayout seo={defaultSEO}>
   <Hero2 />
   <Services />
   <Venues />

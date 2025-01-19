@@ -1,0 +1,79 @@
+---
+import { CategoryFilter } from "../../components/section/CategoryFilter";
+import { CTASection } from "../../components/section/CTASection";
+import { HeroSection } from "../../components/section/HeoSection";
+import { ProcessSection } from "../../components/section/ProcessSection";
+import { SetsGrid } from "../../components/section/SetsGrid";
+import { StatsSection } from "../../components/section/StatsSection";
+import MainLayout from "../../layouts/MainLayout.astro";
+import Layout from "../../layouts/MainLayout.astro";
+import { venueSEO } from "../../SEO/venueSEO";
+
+const sets = [
+  {
+    id: "light-room",
+    title: "Light Room",
+    description: "Professional studio with state-of-the-art lighting equipment",
+    imageUrl:
+      "https://pixxelcity.com/wp-content/uploads/2024/05/Sumit-Zoting-photography-1.jpg",
+    category: "Indoor",
+    price: "from $150/hour",
+  },
+  {
+    id: "mexican-street",
+    title: "Mexican Street",
+    description: "Authentic Mexican-inspired outdoor setting",
+    imageUrl:
+      "https://pixxelcity.com/wp-content/uploads/2023/03/IMG-20230114-WA0061.jpg",
+    category: "Themed",
+    price: "from $200/hour",
+  },
+  {
+    id: "royale-touch",
+    title: "Royale Touch",
+    description: "Elegant and sophisticated royal-themed setting",
+    imageUrl:
+      "https://pixxelcity.com/wp-content/uploads/2024/05/Royal-touch-5.jpeg",
+    category: "Luxury",
+    price: "from $250/hour",
+  },
+  {
+    id: "dreamy-walkway",
+    title: "Dreamy Walkway",
+    description: "Romantic outdoor pathway with natural lighting",
+    imageUrl:
+      "https://pixxelcity.com/wp-content/uploads/2024/05/DSC06305-Recovered-1536x1024.jpg",
+    category: "Outdoor",
+    price: "from $180/hour",
+  },
+  {
+    id: "retro-kitchen",
+    title: "Retro Kitchen",
+    description: "Vintage-inspired kitchen setting",
+    imageUrl:
+      "https://pixxelcity.com/wp-content/uploads/2024/05/Vipin-Photography-2-Retro-Kitchen-1536x1024.jpg",
+    category: "Themed",
+    price: "from $200/hour",
+  },
+  {
+    id: "melody",
+    title: "Melody",
+    description: "Music-themed indoor studio setting",
+    imageUrl:
+      "https://pixxelcity.com/wp-content/uploads/2023/03/IMG-20230114-WA0080.jpg",
+    category: "Indoor",
+    price: "from $150/hour",
+  },
+];
+
+const categories = ["All", "Indoor", "Outdoor", "Themed", "Luxury"];
+---
+
+<MainLayout seo={venueSEO}>
+  <!-- <HeroSection client:load /> -->
+  <CategoryFilter client:load categories={categories} />
+  <SetsGrid client:load sets={sets} />
+  <StatsSection client:load />
+  <ProcessSection client:load />
+  <CTASection client:load />
+</MainLayout>

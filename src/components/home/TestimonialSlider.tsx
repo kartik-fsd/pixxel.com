@@ -65,13 +65,13 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({
                   <div className="flex gap-2">
                     <button
                       onClick={prevTestimonial}
-                      className="p-2 rounded-full bg-white/20 hover:bg-[#FF1F78] transition-colors"
+                      className="p-2 rounded-full bg-white/20 hover:bg-primary transition-colors"
                     >
                       <ChevronLeft className="w-6 h-6" />
                     </button>
                     <button
                       onClick={nextTestimonial}
-                      className="p-2 rounded-full bg-white/20 hover:bg-[#FF1F78] transition-colors"
+                      className="p-2 rounded-full bg-white/20 hover:bg-primary transition-colors"
                     >
                       <ChevronRight className="w-6 h-6" />
                     </button>
@@ -84,7 +84,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({
           {/* Testimonial Content */}
           <div className="lg:col-span-4 flex flex-col justify-center">
             <div className="bg-gray-50 rounded-3xl p-8 relative">
-              <Quote className="absolute top-4 right-4 w-12 h-12 text-[#FF1F78] opacity-20" />
+              <Quote className="absolute top-4 right-4 w-12 h-12 text-gold-dark opacity-20" />
 
               <AnimatePresence mode="wait">
                 <motion.div
@@ -98,11 +98,11 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({
                     "{testimonials[activeIndex].content}"
                   </p>
 
-                  <div className="border-l-4 border-[#FF1F78] pl-4">
+                  <div className="border-l-4 border-primary/70 pl-4">
                     <h4 className="font-bold text-xl">
                       {testimonials[activeIndex].name}
                     </h4>
-                    <p className="text-[#FF1F78]">
+                    <p className="text-primary">
                       {testimonials[activeIndex].role}
                     </p>
                   </div>
@@ -119,7 +119,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({
               key={index}
               onClick={() => setActiveIndex(index)}
               className={`w-2 h-2 rounded-full transition-colors ${
-                index === activeIndex ? "bg-[#FF1F78]" : "bg-gray-200"
+                index === activeIndex ? "bg-primary/80" : "bg-gray-200"
               }`}
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}

@@ -1,0 +1,229 @@
+---
+import { motion } from "framer-motion";
+import MainLayout from "../../layouts/MainLayout.astro";
+import { PackageCard } from "../../components/packages/packageCard";
+import SectionHeading from "../../components/common/SectionHeading.astro";
+import { packagesSEO } from "../../SEO/packagesSEO";
+---
+
+<MainLayout seo={packagesSEO}>
+  <!-- Hero Section -->
+  <div
+    class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#2D3047] to-[#1F2132]"
+  >
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute inset-0"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+      <motion.div
+        client:load
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-8">
+          <span class="text-primary">Professional</span> Studio Space
+        </h1>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-12">
+          Premium equipment and amenities for your perfect photoshoot
+        </p>
+        <motion.button
+          client:load
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-primary text-white px-8 py-4 rounded-xl font-medium hover:bg-primary/80 transition-colors"
+        >
+          Learn Mores
+        </motion.button>
+      </motion.div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg
+        class="w-full h-24 text-white"
+        preserveAspectRatio="none"
+        viewBox="0 0 1440 74"
+      >
+        <path
+          fill="currentColor"
+          d="M0,0 C480,100 960,100 1440,0 L1440,74 L0,74 Z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Advanced Package Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <SectionHeading
+        title="Advanced Package"
+        subtitle="Perfect for professional photoshoots and extended sessions"
+      />
+
+      <PackageCard
+        client:load
+        title="Premium"
+        price="₹16,000*"
+        duration="12 Hour Shoot"
+        features={[
+          "Professional Props & Equipment",
+          "Dedicated Changing/Make-Up Room",
+          "Smoke Machine & Effects",
+          "Premium Lighting Setup",
+          "Access to All Sets & Locations",
+        ]}
+        highlight={true}
+        className="max-w-2xl mx-auto"
+      />
+    </div>
+  </section>
+
+  <!-- General Packages Section -->
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <SectionHeading
+        title="General Packages"
+        subtitle="Choose the perfect package for your needs"
+      />
+
+      <div class="grid md:grid-cols-3 gap-8 mt-16">
+        <PackageCard
+          client:load
+          title="Silver"
+          price={{ morning: "₹6,000", evening: "₹8,000" }}
+          duration="4 Hour Shoot"
+          features={[
+            "Basic Studio Access",
+            "Changing Room Access",
+            "Standard Lighting",
+            "Location Access",
+          ]}
+        />
+
+        <PackageCard
+          client:load
+          title="Gold"
+          price="₹10,000*"
+          duration="6 Hour Shoot"
+          features={[
+            "Full Studio Access",
+            "Props Included",
+            "Special Effects",
+            "Premium Lighting",
+            "All Location Access",
+          ]}
+          highlight={true}
+        />
+
+        <PackageCard
+          client:load
+          title="Diamond"
+          price="₹12,000*"
+          duration="8 Hour Shoot"
+          features={[
+            "Premium Studio Access",
+            "All Props & Equipment",
+            "Special Effects",
+            "Premium Lighting",
+            "VIP Treatment",
+          ]}
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Important Information Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="bg-gray-50 rounded-3xl p-8 md:p-12">
+        <SectionHeading title="Important Information" />
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <motion.div
+            client:load
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="space-y-4"
+          >
+            {
+              [
+                "Extra Room: ₹1,000 per room",
+                "24 Water bottles (300ml) included",
+                "Maximum 8 people per booking",
+              ].map((info) => (
+                <div class="flex items-start space-x-3">
+                  <span class="text-gold text-xl font-bold">✦</span>
+                  <p class="text-gray-600">{info}</p>
+                </div>
+              ))
+            }
+          </motion.div>
+
+          <motion.div
+            client:load
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="space-y-4"
+          >
+            {
+              [
+                "₹1,000 per additional person",
+                "Photographer not included",
+                "₹2,000 refundable security deposit",
+              ].map((info) => (
+                <div class="flex items-start space-x-3">
+                  <span class="text-gold text-xl font-bold">✦</span>
+                  <p class="text-gray-600">{info}</p>
+                </div>
+              ))
+            }
+          </motion.div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="py-24 bg-[#2D3047]">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <motion.div
+        client:load
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <h2 class="text-4xl font-bold text-white mb-6">
+          Ready to Book Your Session?
+        </h2>
+        <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+          Contact us now to schedule your photoshoot or for any queries
+        </p>
+        <motion.button
+          client:load
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-primary text-white px-8 py-4 rounded-xl font-medium hover:bg-primary/80 transition-colors"
+        >
+          Book Now
+        </motion.button>
+      </motion.div>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-slide {
+    animation: slide 50s linear infinite;
+  }
+</style>

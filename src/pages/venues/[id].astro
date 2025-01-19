@@ -1,0 +1,127 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { RelatedSets } from "../../components/section/Related";
+import { SetHero } from "../../components/section/SetHero";
+import { SetDetails } from "../../components/section/SetDetails";
+import { Star, Award, Shield } from "lucide-react";
+import { Testimonials } from "../../components/section/testimonials";
+import { createSetDetailSEO } from "../../SEO/venueDetailSEO";
+
+export function getStaticPaths() {
+  const sets = [
+    {
+      id: "light-room",
+      title: "Light Room",
+      subtitle: "Premium Photography Space",
+      category: "Indoor",
+      description:
+        "Experience photography in our meticulously crafted Light Room, where every detail has been considered to create the perfect environment for your creative vision.",
+      features: [
+        "State-of-the-art lighting system",
+        "Multiple backdrop configurations",
+        "Professional grade equipment",
+        "Climate-controlled environment",
+        "Dedicated makeup and styling area",
+      ],
+      specifications: {
+        duration: "1-4 hours",
+        capacity: "Up to 8 people",
+        equipment: "Professional lighting included",
+      },
+      images: [
+        {
+          url: "https://pixxelcity.com/wp-content/uploads/2024/05/Sumit-Zoting-photography-1.jpg",
+          alt: "Light Room Main View",
+        },
+        {
+          url: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32",
+          alt: "Light Room Setup",
+        },
+        {
+          url: "https://images.unsplash.com/photo-1520333789090-1afc82db536a",
+          alt: "Light Room Portrait",
+        },
+      ],
+      pricing: {
+        hourly: "$150",
+        halfDay: "$500",
+        fullDay: "$900",
+      },
+      amenities: [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance",
+      ],
+    },
+  ];
+
+  return sets.map((set) => ({
+    params: { id: set.id },
+    props: { set },
+  }));
+}
+
+const { set } = Astro.props;
+const setDetailSEO = createSetDetailSEO(set);
+---
+
+<MainLayout seo={setDetailSEO}>
+  <SetHero
+    client:load
+    title={set.title}
+    subtitle={set.subtitle}
+    category={set.category}
+    imageUrl={set.images[0].url}
+  />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <SetDetails client:load set={set} />
+
+    <!-- Amenities Section -->
+    <section class="py-16 border-t border-border">
+      <h2 class="text-3xl font-bold text-center mb-12">Premium Amenities</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        {
+          set.amenities.map((amenity) => (
+            <div class="flex items-start gap-4 p-6 rounded-xl bg-card border border-border">
+              <Star className="h-6 w-6 text-primary flex-shrink-0" />
+              <p class="text-lg">{amenity}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="py-16 border-t border-border">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center space-y-4">
+          <Award className="h-10 w-10 mx-auto text-primary" />
+          <h3 class="text-xl font-semibold">Premium Quality</h3>
+          <p class="text-muted-foreground">
+            Industry-leading equipment and facilities
+          </p>
+        </div>
+        <div class="text-center space-y-4">
+          <Shield className="h-10 w-10 mx-auto text-primary" />
+          <h3 class="text-xl font-semibold">Professional Support</h3>
+          <p class="text-muted-foreground">
+            Expert assistance throughout your session
+          </p>
+        </div>
+        <div class="text-center space-y-4">
+          <Star className="h-10 w-10 mx-auto text-primary" />
+          <h3 class="text-xl font-semibold">5-Star Experience</h3>
+          <p class="text-muted-foreground">
+            Consistently rated excellent by clients
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <Testimonials client:load />
+    <RelatedSets client:load currentSetId={set.id} />
+  </div>
+</MainLayout>

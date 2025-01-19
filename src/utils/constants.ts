@@ -84,3 +84,4 @@ export const SERVICES: Service[] = [
         slug: "celebrity"
     },
 ];
+
