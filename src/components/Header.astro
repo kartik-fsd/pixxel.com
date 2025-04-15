@@ -47,6 +47,7 @@ import { CONTACT } from "../utils/constants";
       </div>
 
       <button
+        id="mobile-menu-button"
         type="button"
         class="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 md:hidden"
         aria-controls="mobile-menu"
@@ -54,7 +55,8 @@ import { CONTACT } from "../utils/constants";
       >
         <span class="sr-only">Open main menu</span>
         <svg
-          class="h-6 w-6"
+          class="h-6 w-6 block"
+          id="menu-open-icon"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
@@ -66,7 +68,86 @@ import { CONTACT } from "../utils/constants";
             stroke-linejoin="round"
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
         </svg>
+        <svg
+          class="h-6 w-6 hidden"
+          id="menu-close-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
       </button>
     </div>
   </div>
+
+  <!-- Mobile menu, show/hide based on menu state -->
+  <div class="hidden" id="mobile-menu">
+    <div class="space-y-1 px-4 py-3 sm:px-6">
+      <a
+        href="/"
+        class="block py-2 text-base font-medium transition-colors hover:text-primary"
+      >
+        Home
+      </a>
+      <a
+        href="/gallery"
+        class="block py-2 text-base font-medium transition-colors hover:text-primary"
+      >
+        Gallery
+      </a>
+      <a
+        href="/venues"
+        class="block py-2 text-base font-medium transition-colors hover:text-primary"
+      >
+        Venues
+      </a>
+      <a
+        href="/packages"
+        class="block py-2 text-base font-medium transition-colors hover:text-primary"
+      >
+        Packages
+      </a>
+      <a
+        href="/contact-us"
+        class="mt-2 block rounded-md bg-primary px-4 py-2 text-center text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+      >
+        Book Now
+      </a>
+    </div>
+  </div>
 </nav>
+
+<script>
+  // Wait for the DOM to be fully loaded
+  document.addEventListener("DOMContentLoaded", () => {
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuOpenIcon = document.getElementById("menu-open-icon");
+    const menuCloseIcon = document.getElementById("menu-close-icon");
+
+    if (mobileMenuButton && mobileMenu && menuOpenIcon && menuCloseIcon) {
+      mobileMenuButton.addEventListener("click", () => {
+        // Toggle mobile menu visibility
+        mobileMenu.classList.toggle("hidden");
+
+        // Toggle icon visibility
+        menuOpenIcon.classList.toggle("hidden");
+        menuCloseIcon.classList.toggle("hidden");
+
+        // Update aria-expanded attribute
+        const isExpanded =
+          mobileMenuButton.getAttribute("aria-expanded") === "true";
+        mobileMenuButton.setAttribute(
+          "aria-expanded",
+          (!isExpanded).toString()
+        );
+      });
+    }
+  });
+</script>
