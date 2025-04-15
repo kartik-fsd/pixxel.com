@@ -1,0 +1,191 @@
+---
+import ServiceDetailLayout from "../../layouts/ServiceLayoutDetails.astro";
+import { SERVICES } from "../../utils/constants";
+
+const preWeddingService = SERVICES.find(
+  (service) => service.slug === "pre-wedding"
+);
+
+// Additional metadata specifically for Pre-Wedding service
+const serviceMetadata = {
+  metaDescription:
+    "Book premium themed sets for your Pre-Wedding Photography in Nagpur. Beautiful backdrops, props, and costumes available at Pixxel City Studio.",
+  ogImage:
+    "https://pixxelcity.com/wp-content/uploads/2024/05/Vipin-Photography-2-Retro-Kitchen-scaled.jpg",
+  canonicalUrl: "https://pixxelcity.com/services/pre-wedding",
+  keywords:
+    "pre-wedding photography sets, venue rental nagpur, photo studio sets, themed backdrops, pixxel city studio",
+};
+
+// Enhance the service object with additional metadata
+const enhancedService = {
+  ...preWeddingService,
+  ...serviceMetadata,
+  heroImage:
+    "https://pixxelcity.com/wp-content/uploads/2024/05/Vipin-Photography-2-Retro-Kitchen-scaled.jpg",
+  process: [
+    {
+      title: "Initial Consultation",
+      description:
+        "We start with understanding your vision and preferred themes. Our team will help you select the perfect set options for your pre-wedding shoot.",
+    },
+    {
+      title: "Set Selection",
+      description:
+        "Choose from our variety of themed sets including Light Room, Mexican Street, Retro Kitchen, French Window, French Cafe and more.",
+    },
+    {
+      title: "Booking & Scheduling",
+      description:
+        "We'll help you reserve your preferred date and time slot, with package options to suit your requirements and budget.",
+    },
+    {
+      title: "Day of Shoot",
+      description:
+        "Arrive at our studio where everything will be ready for you and your photographer. Enjoy access to our changing rooms, props, and refreshments.",
+    },
+    {
+      title: "Set Changes & Support",
+      description:
+        "Our team provides support throughout your session, helping with set changes and ensuring you have everything needed for a successful shoot.",
+    },
+  ],
+};
+---
+
+<ServiceDetailLayout service={enhancedService}>
+  <Fragment slot="service-content">
+    <h3>Premium Themed Sets for Your Pre-Wedding Photography</h3>
+
+    <p>
+      In recent years, pre-wedding photoshoots have become an essential part of
+      the wedding journey for couples looking to capture beautiful memories
+      before their big day. Finding the perfect locations and settings can be
+      challenging and time-consuming.
+    </p>
+
+    <p>
+      At Pixxel City Studio in Nagpur, we provide a convenient solution with our
+      collection of professionally designed themed sets specifically created for
+      pre-wedding photography. Our venue offers multiple backdrops under one
+      roof, saving you time and ensuring stunning photos regardless of weather
+      or season.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+      <img
+        src="https://pixxelcity.com/wp-content/uploads/2024/05/Vipin-Photography-2-Retro-Kitchen-scaled.jpg"
+        alt="Retro Kitchen Pre-Wedding Photography Set"
+        class="rounded-lg"
+      />
+      <img
+        src="https://pixxelcity.com/wp-content/uploads/2024/11/IMG_20241108_181458_617.webp"
+        alt="Elegant Pre-Wedding Photography Set"
+        class="rounded-lg"
+      />
+    </div>
+
+    <h3>Why Choose Pixxel City Sets for Your Pre-Wedding Shoot?</h3>
+
+    <h4>Variety of Unique and Custom Sets</h4>
+
+    <p>
+      We offer a wide range of exotic and customized sets that truly reflect
+      different styles and moods. Our themed environments like Light Room,
+      Mexican Street, Retro Kitchen, French Window, and French Cafe provide
+      perfect backdrops for your love story. Each set is carefully designed with
+      attention to detail, ensuring your photos are one-of-a-kind.
+    </p>
+
+    <h4>Affordable and Convenient Packages</h4>
+
+    <p>
+      Our venue rental packages start from just ₹6,000, making
+      professional-quality settings accessible for different budgets. We offer
+      both general and advanced packages ranging from ₹6,000 to ₹16,000,
+      allowing you to find an option that suits your needs without breaking the
+      bank.
+    </p>
+
+    <h4>Exceptional Studio Amenities</h4>
+
+    <p>
+      At Pixxel City, we provide everything needed for a smooth and comfortable
+      photoshoot experience. Our packages include access to changing/makeup
+      rooms, complimentary water bottles, and appropriate props and costumes
+      according to your chosen theme. Our friendly and professional staff is
+      dedicated to making your pre-wedding shoot stress-free and enjoyable.
+    </p>
+
+    <blockquote
+      class="bg-primary/5 p-6 rounded-lg my-8 border-l-4 border-primary"
+    >
+      <p class="text-lg italic">
+        "The themed sets at Pixxel City were incredible for our pre-wedding
+        shoot! We were able to get photos in multiple settings all in one day.
+        The Retro Kitchen set was our favorite, and the props really added
+        character to our photos. Highly recommend this venue for any couple
+        planning their pre-wedding photography."
+      </p>
+      <cite class="block mt-4 font-medium">— Neha & Rahul, Nagpur</cite>
+    </blockquote>
+
+    <h3>Our Popular Pre-Wedding Sets</h3>
+
+    <h4>Retro Kitchen</h4>
+
+    <p>
+      A colorful, nostalgic kitchen setting perfect for playful couples who want
+      to capture fun, domestic moments. Complete with vintage appliances and
+      retro décor that photographs beautifully.
+    </p>
+
+    <h4>French Cafe</h4>
+
+    <p>
+      Create romantic Parisian vibes with our charming cafe setting featuring
+      cafe tables, vintage lampposts, and European architectural elements that
+      transport you to the streets of Paris.
+    </p>
+
+    <h4>Mexican Street</h4>
+
+    <p>
+      Vibrant and colorful set with authentic Mexican architecture, bright
+      facades, and decorative elements that create a lively backdrop for couples
+      seeking something unique and colorful.
+    </p>
+
+    <h4>Light Room</h4>
+
+    <p>
+      Modern and elegant setup featuring creative lighting installations perfect
+      for dramatic and artistic photos with a contemporary edge.
+    </p>
+
+    <h3>Important Booking Information</h3>
+
+    <p>
+      When booking our studio for your pre-wedding shoot, please note that our
+      packages include venue access, set usage, and basic amenities. You will
+      need to arrange for your own photographer or can work with one of our
+      recommended photography partners.
+    </p>
+
+    <p>
+      We recommend booking at least 2-3 weeks in advance to secure your
+      preferred date and time slot, especially during wedding season. A security
+      deposit of ₹2,000 is required to confirm your booking, which is refundable
+      after your session.
+    </p>
+
+    <h3>Book Your Pre-Wedding Set Today</h3>
+
+    <p>
+      Don't miss the opportunity to create stunning pre-wedding photos in our
+      professionally designed sets. Contact Pixxel City Studio now to schedule a
+      visit or make a booking. Let us help you create beautiful memories that
+      you'll cherish for a lifetime.
+    </p>
+  </Fragment>
+</ServiceDetailLayout>

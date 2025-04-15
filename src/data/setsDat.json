@@ -1,0 +1,39 @@
+{
+  "sets": [
+    {
+      "id": "light-room",
+      "title": "Light Room",
+      "subtitle": "Premium Photography Space",
+      "category": "Indoor",
+      "description": "Experience photography in our meticulously crafted Light Room, where every detail has been considered to create the perfect environment for your creative vision.",
+      "features": [
+        "State-of-the-art lighting system",
+        "Multiple backdrop configurations",
+        "Professional grade equipment",
+        "Climate-controlled environment",
+        "Dedicated makeup and styling area"
+      ],
+      "images": [
+        {
+          "url": "https://pixxelcity.com/wp-content/uploads/2024/05/Sumit-Zoting-photography-1.jpg",
+          "alt": "Light Room Main View"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32",
+          "alt": "Light Room Setup"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1520333789090-1afc82db536a",
+          "alt": "Light Room Portrait"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ]
+    }
+  ]
+}

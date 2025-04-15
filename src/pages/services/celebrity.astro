@@ -1,0 +1,202 @@
+---
+import ServiceDetailLayout from "../../layouts/ServiceLayoutDetails.astro";
+import { SERVICES } from "../../utils/constants";
+
+const celebrityService = SERVICES.find(
+  (service) => service.slug === "celebrity"
+);
+
+// Additional metadata specifically for Celebrity service
+const serviceMetadata = {
+  metaDescription:
+    "Exclusive studio rental for celebrities and public figures in Nagpur. Private venue, VIP amenities, and premium sets at Pixxel City Studio.",
+  ogImage:
+    "https://images.pexels.com/photos/6363874/pexels-photo-6363874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  canonicalUrl: "https://pixxelcity.com/services/celebrity",
+  keywords:
+    "celebrity photo studio, VIP venue rental, exclusive photography sets, private studio nagpur, influencer photoshoot venue",
+};
+
+// Enhance the service object with additional metadata
+const enhancedService = {
+  ...celebrityService,
+  ...serviceMetadata,
+  heroImage:
+    "https://images.pexels.com/photos/6363874/pexels-photo-6363874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  process: [
+    {
+      title: "Private Consultation",
+      description:
+        "We begin with a confidential discussion about your specific requirements, preferred sets, and privacy needs for the studio rental.",
+    },
+    {
+      title: "Exclusive Booking Arrangement",
+      description:
+        "We schedule your session during hours when the entire studio can be reserved exclusively for you and your team, ensuring complete privacy.",
+    },
+    {
+      title: "VIP Setup Preparation",
+      description:
+        "Our team prepares all selected sets, amenities, and special requests before your arrival for a seamless experience.",
+    },
+    {
+      title: "Private Access & Security",
+      description:
+        "Enjoy exclusive access to our facility with enhanced privacy measures and limited staff interaction according to your preferences.",
+    },
+    {
+      title: "Premium Support",
+      description:
+        "Our most experienced staff remains discreetly available throughout your booking to assist with any needs while respecting your privacy.",
+    },
+  ],
+};
+---
+
+<ServiceDetailLayout service={enhancedService}>
+  <Fragment slot="service-content">
+    <h3>Exclusive Studio Rental for Public Figures & Influencers</h3>
+
+    <p>
+      For celebrities, influencers, and public figures, finding the right venue
+      for photo and video content creation can be challenging. Privacy concerns,
+      quality requirements, and time constraints often make conventional studios
+      less than ideal.
+    </p>
+
+    <p>
+      Pixxel City Studio in Nagpur offers a premium, confidential venue rental
+      experience designed specifically for high-profile individuals. Our
+      exclusive studio rental service combines premium sets with enhanced
+      privacy measures to create an ideal environment for celebrity photoshoots
+      and content creation.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+      <img
+        src="https://images.pexels.com/photos/6363874/pexels-photo-6363874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Premium studio set for celebrities"
+        class="rounded-lg"
+      />
+      <img
+        src="https://images.pexels.com/photos/189333/pexels-photo-189333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Exclusive studio venue for VIPs"
+        class="rounded-lg"
+      />
+    </div>
+
+    <h3>The VIP Studio Experience</h3>
+
+    <h4>Complete Privacy & Exclusivity</h4>
+
+    <p>
+      We understand the importance of discretion. For celebrity bookings, we
+      ensure exclusive use of our entire facility with private entrance options,
+      restricted access, and minimal staff presence. Your security and privacy
+      are our top priorities, allowing you to focus entirely on creating your
+      content.
+    </p>
+
+    <h4>Premium Set Options</h4>
+
+    <p>
+      Our studio features a variety of premium set designs that provide
+      sophisticated backdrops for your photoshoots. From elegant minimalist
+      environments to elaborate themed settings, our versatile spaces can be
+      customized to complement your personal brand and specific content needs.
+    </p>
+
+    <h4>VIP Amenities</h4>
+
+    <p>
+      Celebrity bookings include enhanced amenities such as a dedicated green
+      room/lounge area, premium refreshments, spacious changing facilities, and
+      any other special requests that can be accommodated. We aim to create a
+      comfortable, convenient environment for you and your team.
+    </p>
+
+    <blockquote
+      class="bg-primary/5 p-6 rounded-lg my-8 border-l-4 border-primary"
+    >
+      <p class="text-lg italic">
+        "The private studio experience at Pixxel City exceeded my expectations.
+        The facility was completely reserved for my team, and the sets were
+        exactly what we needed for my upcoming film promotion content. The
+        privacy and professionalism made the entire process smooth and
+        efficient."
+      </p>
+      <cite class="block mt-4 font-medium">— A leading Bollywood actress</cite>
+    </blockquote>
+
+    <h3>Ideal for Various Content Needs</h3>
+
+    <h4>Social Media Content Creation</h4>
+
+    <p>
+      For influencers and public figures who regularly create content, our
+      versatile sets allow you to shoot diverse material for your digital
+      platforms in one efficient session. Multiple backdrops and quick set
+      changes help you build a content library in minimal time.
+    </p>
+
+    <h4>Media & Press Appearances</h4>
+
+    <p>
+      Our studio provides an ideal setting for press junkets, interview
+      backdrops, or promotional photoshoots. The controlled environment ensures
+      consistent, high-quality results while maintaining the privacy and
+      security essential for high-profile appearances.
+    </p>
+
+    <h4>Personal Branding & Portfolio Updates</h4>
+
+    <p>
+      Keep your professional image current with regular updates in our premium
+      studio environment. Our varied sets enable you to refresh your portfolio
+      with diverse, high-quality images that maintain your established image
+      standard.
+    </p>
+
+    <h3>Confidentiality Assurance</h3>
+
+    <p>
+      We understand the importance of discretion in all aspects of celebrity
+      bookings. Our staff signs confidentiality agreements, and we implement
+      strict protocols regarding your visit and any content created in our
+      studio. We never disclose client information or use your name for
+      promotional purposes without explicit permission.
+    </p>
+
+    <p>
+      For additional security, we can arrange for private entry, limited staff
+      interaction, and customized booking times that minimize the possibility of
+      public awareness of your studio session.
+    </p>
+
+    <h3>Important Booking Information</h3>
+
+    <p>
+      Celebrity bookings typically use our Premium package (12 hours) to ensure
+      adequate time and complete privacy. This includes exclusive use of the
+      entire facility and all available sets. Please note that we provide the
+      venue, sets, and premium amenities—you'll need to bring your own
+      photographer and stylist team.
+    </p>
+
+    <p>
+      Due to the customized nature of VIP bookings, we recommend contacting us
+      well in advance through your management team or our private channels. All
+      arrangements are handled with complete confidentiality from the initial
+      inquiry through the booking process.
+    </p>
+
+    <h3>Book Your Exclusive Studio Session</h3>
+
+    <p>
+      For confidential inquiries about our VIP studio rental services, please
+      contact us through our private line or email. Our team will work
+      discreetly with you or your representatives to arrange an exclusive studio
+      experience that meets your specific needs and expectations.
+    </p>
+  </Fragment>
+</ServiceDetailLayout>

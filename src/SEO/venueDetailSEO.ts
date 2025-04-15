@@ -9,20 +9,10 @@ interface SetDetailProps {
     category: string;
     description: string;
     features: string[];
-    specifications: {
-        duration: string;
-        capacity: string;
-        equipment: string;
-    };
     images: Array<{
         url: string;
         alt: string;
     }>;
-    pricing: {
-        hourly: string;
-        halfDay: string;
-        fullDay: string;
-    };
     amenities: string[];
 }
 
@@ -78,54 +68,7 @@ export const createSetDetailSEO = (set: SetDetailProps): SEOProps => {
                     "value": true
                 }))
             ],
-            "offers": {
-                "@type": "AggregateOffer",
-                "offers": [
-                    {
-                        "@type": "Offer",
-                        "name": "Hourly Rate",
-                        "price": set.pricing.hourly.replace('$', ''),
-                        "priceCurrency": "USD",
-                        "unitText": "HOUR",
-                        "availability": "https://schema.org/InStock"
-                    },
-                    {
-                        "@type": "Offer",
-                        "name": "Half Day Rate",
-                        "price": set.pricing.halfDay.replace('$', ''),
-                        "priceCurrency": "USD",
-                        "unitText": "DAY",
-                        "availability": "https://schema.org/InStock"
-                    },
-                    {
-                        "@type": "Offer",
-                        "name": "Full Day Rate",
-                        "price": set.pricing.fullDay.replace('$', ''),
-                        "priceCurrency": "USD",
-                        "unitText": "DAY",
-                        "availability": "https://schema.org/InStock"
-                    }
-                ],
-                "priceCurrency": "USD",
-                "priceRange": `${set.pricing.hourly} - ${set.pricing.fullDay}`
-            },
-            "additionalProperty": [
-                {
-                    "@type": "PropertyValue",
-                    "name": "Category",
-                    "value": set.category
-                },
-                {
-                    "@type": "PropertyValue",
-                    "name": "Maximum Capacity",
-                    "value": set.specifications.capacity
-                },
-                {
-                    "@type": "PropertyValue",
-                    "name": "Equipment",
-                    "value": set.specifications.equipment
-                }
-            ],
+
             "review": {
                 "@type": "Review",
                 "reviewRating": {

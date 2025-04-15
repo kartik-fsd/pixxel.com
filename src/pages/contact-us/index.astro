@@ -1,0 +1,44 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { ContactForm } from "../../components/contact-us/ContactForm";
+import { ContactInfo } from "../../components/contact-us/ContactInfo";
+import { GoogleMap } from "../../components/contact-us/GoogleMap";
+import { contactPageSEO } from "../../SEO/contactPageSEO";
+---
+
+<MainLayout seo={contactPageSEO}>
+  <div class="bg-gradient-to-b from-background to-background/50 pt-20 pb-24">
+    <!-- Hero Section -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+      <div class="text-center max-w-3xl mx-auto">
+        <h1
+          class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80"
+        >
+          Get in Touch
+        </h1>
+        <p
+          class="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
+        >
+          We'd love to hear from you. Whether you have a question about our
+          venue, bookings, or anything else, our team is ready to assist you.
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <!-- Contact Form -->
+        <div class="lg:sticky lg:top-24">
+          <ContactForm client:load />
+        </div>
+
+        <!-- Contact Information and Map -->
+        <div class="space-y-12">
+          <ContactInfo client:load />
+          <GoogleMap client:visible />
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

@@ -1,0 +1,188 @@
+---
+import ServiceDetailLayout from "../../layouts/ServiceLayoutDetails.astro";
+import { SERVICES } from "../../utils/constants";
+
+const anniversaryService = SERVICES.find(
+  (service) => service.slug === "anniversary-shoot"
+);
+
+// Additional metadata specifically for Anniversary service
+const serviceMetadata = {
+  metaDescription:
+    "Book our premium themed sets for your Anniversary Photography in Nagpur. Beautiful backdrops, props, and romantic settings at Pixxel City Studio.",
+  ogImage:
+    "https://pixxelcity.com/wp-content/uploads/2024/05/0C9A6819-scaled.jpg",
+  canonicalUrl: "https://pixxelcity.com/services/anniversary-shoot",
+  keywords:
+    "anniversary photography sets, venue rental nagpur, photo studio rental, themed backdrops, romantic settings",
+};
+
+// Enhance the service object with additional metadata
+const enhancedService = {
+  ...anniversaryService,
+  ...serviceMetadata,
+  heroImage:
+    "https://pixxelcity.com/wp-content/uploads/2024/05/0C9A6819-scaled.jpg",
+  process: [
+    {
+      title: "Set Consultation",
+      description:
+        "We begin with understanding the significance of your anniversary and helping you select the perfect themed set for your celebration photos.",
+    },
+    {
+      title: "Venue Booking",
+      description:
+        "Choose your preferred date and time slot with package options tailored to the amount of studio time you need.",
+    },
+    {
+      title: "Set Preparation",
+      description:
+        "Before your arrival, we prepare all sets, props, and special requests to ensure everything is ready for your shoot.",
+    },
+    {
+      title: "Day of the Shoot",
+      description:
+        "Enjoy exclusive access to your chosen sets with comfortable amenities including changing rooms and refreshments.",
+    },
+    {
+      title: "Support During Session",
+      description:
+        "Our staff remains available throughout your booking to assist with set changes, props, and any other needs that arise.",
+    },
+  ],
+};
+---
+
+<ServiceDetailLayout service={enhancedService}>
+  <Fragment slot="service-content">
+    <h3>Special Sets for Your Anniversary Celebration Photos</h3>
+
+    <p>
+      Anniversaries mark significant milestones in a couple's journey together,
+      celebrating the years of love, growth, and memories created. These special
+      occasions deserve to be commemorated with beautiful photographs that
+      capture the continuing story of your relationship.
+    </p>
+
+    <p>
+      At Pixxel City Studio in Nagpur, we offer premium themed sets specifically
+      designed for anniversary photography. Our venue provides couples with
+      beautiful, ready-made backdrops that create the perfect setting for
+      romantic anniversary photos without the hassle of location scouting or
+      weather concerns.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+      <img
+        src="https://pixxelcity.com/wp-content/uploads/2024/05/0C9A6819-scaled.jpg"
+        alt="Romantic Anniversary Set"
+        class="rounded-lg"
+      />
+      <img
+        src="https://pixxelcity.com/wp-content/uploads/2024/11/IMG_20241108_181458_617.webp"
+        alt="Elegant Couple Photography Set"
+        class="rounded-lg"
+      />
+    </div>
+
+    <h3>Why Choose Our Venue for Your Anniversary Photos?</h3>
+
+    <h4>Romantic Themed Sets</h4>
+
+    <p>
+      We offer a diverse range of beautiful sets that can be tailored for
+      anniversary celebrations. From elegant Santorini-inspired backdrops to
+      intimate French cafe settings, our versatile studio spaces provide the
+      perfect ambiance for capturing your continuing love story.
+    </p>
+
+    <h4>Convenient All-in-One Location</h4>
+
+    <p>
+      Instead of traveling to multiple locations, our studio provides varied
+      backdrops all under one roof. This saves time and ensures you get diverse
+      photos regardless of weather conditions, giving you more time to enjoy
+      your anniversary celebration.
+    </p>
+
+    <h4>Complete Studio Amenities</h4>
+
+    <p>
+      Our venue offers everything needed for a comfortable photoshoot
+      experience, including private changing rooms, refreshments, and
+      appropriate props. You and your photographer can focus entirely on
+      creating beautiful images without logistical concerns.
+    </p>
+
+    <blockquote
+      class="bg-primary/5 p-6 rounded-lg my-8 border-l-4 border-primary"
+    >
+      <p class="text-lg italic">
+        "We celebrated our 5th anniversary with a photoshoot at Pixxel City, and
+        the venue was perfect. The themed sets were beautiful and gave us such
+        variety in our photos. Having access to the changing room and props made
+        everything so convenient. Definitely worth booking for any special
+        occasion!"
+      </p>
+      <cite class="block mt-4 font-medium">— Priya & Ajay, Nagpur</cite>
+    </blockquote>
+
+    <h3>Popular Anniversary Set Options</h3>
+
+    <h4>Santorini Escape</h4>
+
+    <p>
+      Transport yourselves to the romantic Greek islands with our
+      Santorini-inspired set featuring whitewashed walls, blue accents, and
+      Mediterranean touches. Perfect for couples celebrating milestone
+      anniversaries.
+    </p>
+
+    <h4>French Cafe</h4>
+
+    <p>
+      Create romantic Parisian memories with our charming cafe setting, complete
+      with cafe tables, vintage decor, and European architectural elements that
+      capture the romance of Paris.
+    </p>
+
+    <h4>Elegant Lounge</h4>
+
+    <p>
+      Our sophisticated lounge set offers a luxurious backdrop with elegant
+      furniture, dramatic lighting, and upscale decor—ideal for couples wanting
+      a more formal anniversary portrait setting.
+    </p>
+
+    <h3>Important Booking Information</h3>
+
+    <p>
+      Our venue provides the sets, spaces, and amenities for your anniversary
+      photoshoot. You'll need to arrange for your own photographer, though we're
+      happy to recommend trusted local professionals who are familiar with our
+      studio spaces.
+    </p>
+
+    <p>
+      We offer various time slots and package options to accommodate different
+      needs and budgets. Weekend bookings fill quickly, especially during peak
+      seasons, so we recommend scheduling your session at least 2-3 weeks in
+      advance.
+    </p>
+
+    <p>
+      A security deposit of ₹2,000 is required to confirm your booking, which is
+      fully refundable after your session assuming no damage to the sets or
+      props.
+    </p>
+
+    <h3>Book Your Anniversary Set Today</h3>
+
+    <p>
+      Don't let your anniversary pass without capturing beautiful memories.
+      Contact Pixxel City Studio to schedule your anniversary photoshoot venue
+      booking and create lasting images of this important milestone in your
+      relationship.
+    </p>
+  </Fragment>
+</ServiceDetailLayout>

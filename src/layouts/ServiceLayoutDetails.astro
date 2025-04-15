@@ -1,0 +1,537 @@
+---
+import MainLayout from "./MainLayout.astro";
+import Container from "../components/common/Container.astro";
+import Image from "astro/components/Image.astro";
+import { RelatedServices } from "../components/services/RelatedService";
+import { ServiceGallery } from "../components/services/ServiceGallery";
+import { ServiceTestimonials } from "../components/services/ServiceTestimonials";
+import { ServicePricing } from "../components/services/ServicePricing";
+import { ServiceFAQ } from "../components/services/ServiceFAQ";
+import { ServiceCTA } from "../components/services/ServiceCTA";
+
+const { service } = Astro.props;
+
+// Generate SEO data specific to this service
+const serviceSEO = {
+  title: `${service.title} Studio Sets & Venue | Pixxel City Nagpur`,
+  description:
+    service.metaDescription ||
+    `Premium ${service.title} photography sets and venue rental in Nagpur. Professional studio setups and outdoor locations for ${service.title.toLowerCase()} shoots.`,
+  openGraph: {
+    title: `${service.title} Studio Sets & Venue | Pixxel City Nagpur`,
+    description:
+      service.metaDescription ||
+      `Premium ${service.title} photography sets and venue rental in Nagpur. Professional studio setups and outdoor locations for ${service.title.toLowerCase()} shoots.`,
+    image: service.ogImage || service.image,
+    url:
+      service.canonicalUrl || `https://pixxelcity.com/services/${service.slug}`,
+    type: "website",
+  },
+};
+
+// Structured data for SEO
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: `${service.title} Photography Sets & Venue Rental`,
+  provider: {
+    "@type": "LocalBusiness",
+    name: "Pixxel City Studio",
+    image: "https://pixxelcity.com/logo.png",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Back Side Of Advani Dhaba, Pixxel City",
+      addressLocality: "Wadegaon (kale)",
+      addressRegion: "Maharashtra",
+      postalCode: "441204",
+      addressCountry: "IN",
+    },
+    telephone: "+916261180073",
+    priceRange: "₹₹",
+  },
+  description: service.description,
+  offers: {
+    "@type": "AggregateOffer",
+    priceCurrency: "INR",
+    lowPrice: "6000",
+    highPrice: "16000",
+  },
+  areaServed: {
+    "@type": "City",
+    name: "Nagpur",
+  },
+};
+---
+
+<MainLayout seo={serviceSEO}>
+  <!-- Hero Section -->
+  <section
+    class="relative py-16 md:py-24 overflow-hidden bg-gradient-to-b from-gray-50 to-white"
+  >
+    <div
+      class="absolute inset-0 bg-[url('/patterns/dot-pattern.png')] opacity-[0.03]"
+    >
+    </div>
+
+    <Container>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <div class="space-y-6">
+            <!-- Service Category Badge -->
+            <div
+              class="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium"
+            >
+              <service.icon className="w-4 h-4 mr-2" />
+              <span>Studio Sets & Venue</span>
+            </div>
+
+            <h1
+              class="text-4xl md:text-5xl font-display font-bold text-gray-900"
+            >
+              {service.title}
+              <span class="block mt-2 text-primary">Photography Sets</span>
+            </h1>
+
+            <p class="text-lg text-gray-600 max-w-xl">
+              {service.description}
+            </p>
+
+            <!-- Feature List -->
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
+              {
+                service.features.map((feature) => (
+                  <li class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div class="flex items-center justify-center w-5 h-5 rounded-full bg-primary/10">
+                        <span class="text-primary text-xs">✦</span>
+                      </div>
+                    </div>
+                    <span class="ml-2 text-gray-600">{feature}</span>
+                  </li>
+                ))
+              }
+            </ul>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap gap-4 pt-4">
+              <a
+                href="#booking"
+                class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
+              >
+                Book Now
+              </a>
+              <a
+                href="#gallery"
+                class="px-6 py-3 bg-white border border-gray-200 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-medium"
+              >
+                View Gallery
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="order-1 md:order-2 relative">
+          <div
+            class="relative overflow-hidden rounded-2xl shadow-xl aspect-[4/3]"
+          >
+            <Image
+              src={service.heroImage || service.image}
+              alt={`${service.title} Photography Sets by Pixxel City Nagpur`}
+              width={600}
+              height={450}
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"
+            >
+            </div>
+          </div>
+
+          <!-- Floating stats -->
+          <div class="absolute -bottom-6 left-4 right-4 flex justify-between">
+            <div
+              class="bg-white shadow-lg rounded-lg p-4 flex items-center space-x-3"
+            >
+              <div class="bg-primary/10 p-2 rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-xs text-gray-500">Session Duration</p>
+                <p class="font-medium text-gray-900">4-12 Hours</p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white shadow-lg rounded-lg p-4 flex items-center space-x-3"
+            >
+              <div class="bg-primary/10 p-2 rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-xs text-gray-500">Multiple Sets</p>
+                <p class="font-medium text-gray-900">Themed Backdrops</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Main Content Section -->
+  <section class="py-16 bg-white" id="details">
+    <Container>
+      <div class="grid md:grid-cols-3 gap-12">
+        <!-- Main Content -->
+        <div class="md:col-span-2 space-y-8">
+          <h2 class="text-3xl font-display font-bold text-gray-900">
+            About Our {service.title} Sets
+          </h2>
+
+          <div class="space-y-8 text-gray-600">
+            <!-- Service content from the page -->
+            <slot name="service-content" />
+          </div>
+
+          <!-- Service Process Steps -->
+          {
+            service.process && (
+              <div class="mt-12 space-y-8">
+                <h3 class="text-2xl font-display font-bold text-gray-900">
+                  Our {service.title} Process
+                </h3>
+
+                <div class="space-y-6">
+                  {service.process.map((step, index) => (
+                    <div class="flex">
+                      <div class="flex-shrink-0 mr-4">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold text-lg">
+                          {index + 1}
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="text-xl font-medium text-gray-900">
+                          {step.title}
+                        </h4>
+                        <p class="mt-2 text-gray-600">{step.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )
+          }
+        </div>
+
+        <!-- Sidebar -->
+        <div class="space-y-8">
+          <!-- Quick Info Card -->
+          <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+            <h3 class="text-xl font-display font-bold text-gray-900 mb-4">
+              Quick Information
+            </h3>
+
+            <ul class="space-y-4">
+              <li class="flex">
+                <div class="flex-shrink-0 mt-1 mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900">Duration</p>
+                  <p class="text-sm text-gray-600">
+                    4-12 hours, depending on package
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex">
+                <div class="flex-shrink-0 mt-1 mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900">Starting Price</p>
+                  <p class="text-sm text-gray-600">From ₹6,000 onwards</p>
+                </div>
+              </li>
+
+              <li class="flex">
+                <div class="flex-shrink-0 mt-1 mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900">Availability</p>
+                  <p class="text-sm text-gray-600">
+                    Bookings available 7 days a week
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex">
+                <div class="flex-shrink-0 mt-1 mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900">Group Size</p>
+                  <p class="text-sm text-gray-600">
+                    Up to 8 people per booking
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex">
+                <div class="flex-shrink-0 mt-1 mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900">Included</p>
+                  <p class="text-sm text-gray-600">
+                    Set access, props, changing rooms, water
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="mt-6 pt-6 border-t border-gray-200">
+              <a
+                href="#booking"
+                class="block w-full py-3 px-4 bg-primary text-center text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
+              >
+                Book Your Session
+              </a>
+            </div>
+          </div>
+
+          <!-- FAQ Preview -->
+          <div class="bg-white rounded-xl p-6 border border-gray-100">
+            <h3 class="text-xl font-display font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h3>
+
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-medium text-gray-900">
+                  Do you provide photographers?
+                </h4>
+                <p class="mt-1 text-sm text-gray-600">
+                  No, we only provide the venue and sets. You'll need to bring
+                  your own photographer for the shoot.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="font-medium text-gray-900">
+                  How many people can attend?
+                </h4>
+                <p class="mt-1 text-sm text-gray-600">
+                  Our packages include up to 8 people. Additional people can be
+                  accommodated at ₹1,000 per person.
+                </p>
+              </div>
+
+              <a
+                href="#faq"
+                class="inline-flex items-center mt-3 text-sm font-medium text-primary hover:text-primary/80"
+              >
+                View all FAQs
+                <svg
+                  class="w-4 h-4 ml-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Gallery Section - Only show if service has gallery images -->
+  {
+    service.gallery && (
+      <section id="gallery" class="py-16 bg-gray-50">
+        <Container>
+          <h2 class="text-3xl font-display font-bold text-gray-900 mb-12 text-center">
+            {service.title} Gallery
+          </h2>
+
+          <ServiceGallery service={service} client:visible />
+        </Container>
+      </section>
+    )
+  }
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-16 bg-white">
+    <Container>
+      <h2
+        class="text-3xl font-display font-bold text-gray-900 mb-12 text-center"
+      >
+        Our Rental Packages
+      </h2>
+
+      <ServicePricing service={service} client:visible />
+    </Container>
+  </section>
+
+  <!-- Testimonials - Only if service has testimonials -->
+  {
+    service.testimonials && (
+      <section class="py-16 bg-gray-50">
+        <Container>
+          <h2 class="text-3xl font-display font-bold text-gray-900 mb-12 text-center">
+            What Our Clients Say
+          </h2>
+
+          <ServiceTestimonials service={service} client:visible />
+        </Container>
+      </section>
+    )
+  }
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-16 bg-white">
+    <Container>
+      <h2
+        class="text-3xl font-display font-bold text-gray-900 mb-12 text-center"
+      >
+        Frequently Asked Questions
+      </h2>
+
+      <ServiceFAQ service={service} client:visible />
+    </Container>
+  </section>
+
+  <!-- Booking CTA -->
+  <section id="booking" class="py-16 bg-gray-900 text-white">
+    <Container>
+      <ServiceCTA service={service} client:visible />
+    </Container>
+  </section>
+
+  <!-- Related Services -->
+  <section class="py-16 bg-white">
+    <Container>
+      <h2
+        class="text-3xl font-display font-bold text-gray-900 mb-12 text-center"
+      >
+        Explore Other Sets
+      </h2>
+
+      <RelatedServices currentService={service} client:visible />
+    </Container>
+  </section>
+
+  <!-- Structured Data for SEO -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(structuredData)}
+  />
+</MainLayout>

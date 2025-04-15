@@ -1,0 +1,122 @@
+{
+  "sets": [
+    {
+      "id": "arabian-elegance",
+      "title": "Arabian Elegance",
+      "description": "Arabian-inspired design with arches, mosaics, balcony, pastel hues.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Arabian-Elegance.JPG",
+      "category": "outdoor",
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "bedroom-set",
+      "title": "Bedroom Set",
+      "description": "Elegant four-poster bed with lace curtains, dreamy ambiance.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/BEDROOM.JPG",
+      "category": "indoor",
+      "price": "from $150/hour 4images"
+    },
+    {
+      "id": "blue-jodhpur",
+      "title": "Blue Jodhpur",
+      "description": "Jodhpur-inspired azure walls with motifs, planters, elegant backdrop.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Blue-Jodhpur-6.jpg",
+      "category": "outdoor",
+      "price": "from $150/hour 8images from 5 it is small jpg"
+    },
+    {
+      "id": "rustic-arches",
+      "title": "Rustic Arches",
+      "description": "Rustic outdoor setup with brick arches and vintage charm.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Rustic-Arches-3.jpeg",
+      "category": "outdoor",
+      "price": "from $150/hour 2images"
+    },
+    {
+      "id": "crimson-grace",
+      "title": "Crimision Grace",
+      "description": "Crimson Grace: lush greenery, modern design, serene, versatile ambiance.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Crimson-grace.jpg",
+      "category": "outdoor",
+      "price": "from $150/hour 4images"
+    },
+    {
+      "id": "dark-room",
+      "title": "Dark Room",
+      "description": "The Dark Room: sleek design, moody lighting, dramatic ambiance.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Dark-Room-3.jpg",
+      "category": "indoor",
+      "price": "from $150/hour 4images from 3 to 7"
+    },
+    {
+      "id": "date-night",
+      "title": "Date Night",
+      "description": "Date Night: lit canopy, fairy lights, greenery, magical atmosphere.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Date-Night-3.JPG",
+      "category": "indoor",
+      "price": "from $150/hour 2images"
+    },
+    {
+      "id": "floral-arch",
+      "title": "Floral Arch",
+      "description": "",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Floral-Arch.jpg",
+      "category": "outdoor",
+      "price": "from $150/hour 4images"
+    },
+    {
+      "id": "french-cafe",
+      "title": "French Cafe",
+      "description": "Quaint café: vintage lampposts, cozy seating, romantic Parisian vibe.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/French-Cafe.jpeg",
+      "category": "outdoor",
+      "price": "from $150/hour 7images from 6 ,7 jpg"
+    },
+    {
+      "id": "glass-house",
+      "title": "Glass House",
+      "category": "indoor",
+      "description": "Glass House: modern structure, scenic views, versatile, dreamy backdrop.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Glass-House.jpg",
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "indo-ethnic",
+      "title": "Indo Ethnic",
+      "description": "Indo-Ethnic: jharokhas, chandeliers, royal palette, stunning backdrop.",
+      "category": "indoor",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Indo-Ethnic.JPG",
+      "price": "from $150/hour 3images"
+    },
+    {
+      "id": "playful-pantry",
+      "title": "Playful Pantry",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Kitchen.JPG",
+      "description": "Playful Pantry: colorful cabinets, quirky decor, fun, engaging atmosphere.",
+      "category": "indoor",
+      "price": "from $150/hour 6images "
+    },
+    {
+      "id": "cozy-library",
+      "title": "Cozy Library",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Library.JPG",
+      "description": "Cozy library: serene, elegant, warm, timeless, sophisticated photo setting.",
+      "category": "indoor",
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "retro-studio",
+      "title": "Retro Studio",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Lighthouse",
+      "description": "Vintage vibe studio: gramophone, retro TV, wood backdrop, magical ambiance.",
+      "category": "indoor",
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "elegant-bar",
+      "title": "Elegant bar",
+      "description": "Elegant bar: hexagonal shelves, plush stools, geometric design, memorable backdrop.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Bar.JPG"
+    }
+  ]
+}

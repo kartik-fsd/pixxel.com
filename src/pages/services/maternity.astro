@@ -1,0 +1,194 @@
+---
+import ServiceDetailLayout from "../../layouts/ServiceLayoutDetails.astro";
+import { SERVICES } from "../../utils/constants";
+
+const maternityService = SERVICES.find(
+  (service) => service.slug === "maternity"
+);
+
+// Additional metadata specifically for Maternity service
+const serviceMetadata = {
+  metaDescription:
+    "Book our safe and comfortable themed sets for Maternity Photography in Nagpur. Beautiful backdrops and amenities for expecting mothers at Pixxel City Studio.",
+  ogImage:
+    "https://images.pexels.com/photos/18151037/pexels-photo-18151037/free-photo-of-man-hugging-pregnant-woman-in-pink-dress.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  canonicalUrl: "https://pixxelcity.com/services/maternity",
+  keywords:
+    "maternity photography sets, pregnancy photoshoot venue, studio rental nagpur, baby bump photos, expecting mothers",
+};
+
+// Enhance the service object with additional metadata
+const enhancedService = {
+  ...maternityService,
+  ...serviceMetadata,
+  heroImage:
+    "https://images.pexels.com/photos/18151037/pexels-photo-18151037/free-photo-of-man-hugging-pregnant-woman-in-pink-dress.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  process: [
+    {
+      title: "Set Consultation",
+      description:
+        "We discuss which of our themed sets would work best for your maternity photos and any special accommodations needed for your comfort.",
+    },
+    {
+      title: "Booking & Scheduling",
+      description:
+        "We help you select the ideal time slot, with consideration for your comfort and energy levels during pregnancy.",
+    },
+    {
+      title: "Studio Preparation",
+      description:
+        "Before your arrival, we prepare the studio with comfortable seating, proper temperature, and easy access to amenities.",
+    },
+    {
+      title: "Day of the Shoot",
+      description:
+        "Enjoy access to our comfortable sets, spacious changing rooms, and pregnancy-friendly props and furniture.",
+    },
+    {
+      title: "Ongoing Support",
+      description:
+        "Our staff provides attentive assistance throughout your session, ensuring your comfort and offering frequent breaks as needed.",
+    },
+  ],
+};
+---
+
+<ServiceDetailLayout service={enhancedService}>
+  <Fragment slot="service-content">
+    <h3>Comfortable & Beautiful Sets for Maternity Photography</h3>
+
+    <p>
+      Pregnancy is one of life's most beautiful journeys. A maternity photoshoot
+      offers the perfect opportunity to document this special time, capturing
+      the glow and anticipation as you prepare to welcome your little one into
+      the world.
+    </p>
+
+    <p>
+      At Pixxel City Studio in Nagpur, we offer specially designed studio spaces
+      and sets that cater to the unique needs of expecting mothers. Our venue
+      provides comfortable, safe, and beautiful backdrops for your maternity
+      photography session.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+      <img
+        src="https://images.pexels.com/photos/18151037/pexels-photo-18151037/free-photo-of-man-hugging-pregnant-woman-in-pink-dress.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Beautiful maternity portrait set"
+        class="rounded-lg"
+      />
+      <img
+        src="https://images.pexels.com/photos/4006576/pexels-photo-4006576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Elegant maternity photography set"
+        class="rounded-lg"
+      />
+    </div>
+
+    <h3>Why Choose Our Venue for Maternity Photos?</h3>
+
+    <h4>Pregnancy-Friendly Environment</h4>
+
+    <p>
+      We've designed our studio with the comfort and safety of expecting mothers
+      in mind. Our sets feature comfortable seating options, controlled
+      temperature settings, easy bathroom access, and a relaxed atmosphere where
+      you can take breaks whenever needed.
+    </p>
+
+    <h4>Versatile Backdrop Options</h4>
+
+    <p>
+      Our venue offers several themed sets that work beautifully for maternity
+      photography. From soft, natural light setups to more dramatic and artistic
+      backgrounds, we provide varied options to suit different photography
+      styles and preferences.
+    </p>
+
+    <h4>Privacy and Convenience</h4>
+
+    <p>
+      Our studio offers private, spacious changing rooms where you can
+      comfortably change outfits during your session. Unlike public locations,
+      our controlled environment ensures complete privacy and eliminates
+      concerns about weather or onlookers.
+    </p>
+
+    <blockquote
+      class="bg-primary/5 p-6 rounded-lg my-8 border-l-4 border-primary"
+    >
+      <p class="text-lg italic">
+        "I was nervous about doing a maternity photoshoot, but the Pixxel City
+        venue was perfect. The private studio space made me feel comfortable,
+        and the sets were beautiful. Having a nice changing room and plenty of
+        places to rest between shots made all the difference."
+      </p>
+      <cite class="block mt-4 font-medium">— Meera S., Nagpur</cite>
+    </blockquote>
+
+    <h3>Set Options for Maternity Photography</h3>
+
+    <h4>Natural Light Studio</h4>
+
+    <p>
+      Our bright, airy set with large windows provides beautiful natural
+      lighting that's perfect for capturing the pregnancy glow. Featuring
+      neutral tones and minimal styling, this versatile space works with any
+      color palette or theme.
+    </p>
+
+    <h4>Garden Setting</h4>
+
+    <p>
+      Our indoor garden-inspired set offers the beauty of nature without weather
+      concerns or walking long distances. With floral elements, greenery, and
+      natural textures, this set creates a serene, life-affirming backdrop.
+    </p>
+
+    <h4>Classic Studio</h4>
+
+    <p>
+      For timeless maternity portraits, our classic studio setup with fabric
+      draping, soft lighting, and minimalist design creates elegant silhouettes
+      and focused portraits that highlight your beautiful form.
+    </p>
+
+    <h3>When to Book Your Maternity Session</h3>
+
+    <p>
+      Most maternity photography takes place between 28 and 34 weeks when your
+      baby bump is beautifully visible but you're still comfortable enough to
+      enjoy the session. We recommend booking your studio time at least a month
+      in advance to secure your preferred date.
+    </p>
+
+    <p>
+      Please note that our venue provides the beautiful sets and amenities for
+      your maternity photos, but you'll need to arrange for your own
+      photographer. We're happy to recommend photographers who specialize in
+      maternity sessions and are familiar with our studio.
+    </p>
+
+    <h3>Important Booking Information</h3>
+
+    <p>
+      Our maternity-friendly packages include venue access, set usage,
+      comfortable changing facilities, and refreshments. A security deposit of
+      ₹2,000 is required when booking, which is fully refundable after your
+      session.
+    </p>
+
+    <p>
+      We offer special weekday rates and quieter time slots that many expecting
+      mothers prefer. Our staff is trained to accommodate the needs of pregnant
+      clients and ensure your comfort throughout the session.
+    </p>
+
+    <h3>Book Your Maternity Photography Venue</h3>
+
+    <p>
+      Contact Pixxel City Studio today to reserve your maternity photography
+      session. Our beautiful sets and comfortable environment will help you
+      create stunning images that celebrate this special time in your life.
+    </p>
+  </Fragment>
+</ServiceDetailLayout>
