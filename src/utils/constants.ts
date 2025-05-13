@@ -1,7 +1,7 @@
 import { Camera, Heart, Users, Baby, Cake, Building, Briefcase, ShoppingBag, Music, Star } from "lucide-react";
 
 // Define services interface
-interface Service {
+export interface Service {
     id?: number;
     slug: string;
     title: string;
@@ -18,7 +18,7 @@ export const SERVICES: Service[] = [
         slug: "pre-wedding",
         title: "Pre-Wedding Shoot",
         description: "Capture the magic and romance of your upcoming marriage with stunning pre-wedding photoshoots.",
-        image: "https://images.pexels.com/photos/29187298/pexels-photo-29187298/free-photo-of-stylish-couple-in-retro-inspired-toronto-setting.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        image: "https://ik.imagekit.io/c54qkthzl/Dark-Room-3.jpg",
         icon: Heart,
         features: ["Multiple Themed Sets", "Professional Lighting", "Costume Options", "Expert Guidance"]
     },
@@ -27,7 +27,7 @@ export const SERVICES: Service[] = [
         slug: "anniversary-shoot",
         title: "Anniversary Shoot",
         description: "Celebrate your love story with a beautiful anniversary photoshoot in our themed settings.",
-        image: "https://media.istockphoto.com/id/1464025274/photo/happy-smiling-couple-holding-hands-by-looking-at-camera-during-candle-light-dinner-at-home.jpg?s=1024x1024&w=is&k=20&c=mA2cdN4eU7BB9bL0tX8DhAqwdz9TtXwDLKOhWYFR2OA=",
+        image: "https://ik.imagekit.io/c54qkthzl/Date-Night-2.JPG",
         icon: Camera,
         features: ["Romantic Setups", "Mood Lighting", "Props Included", "Flexible Timing"]
     },
@@ -45,28 +45,20 @@ export const SERVICES: Service[] = [
         slug: "brand-shoot",
         title: "Brand Shoot",
         description: "Professional brand photography to elevate your business presence and marketing materials.",
-        image: "https://images.pexels.com/photos/216489/pexels-photo-216489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        image: "https://ik.imagekit.io/c54qkthzl/tr:w-1920,h-1080/Santorini-brand_shoot.jpg?updatedAt=1747122172255",
         icon: Building,
         features: ["Commercial Sets", "Product Display", "Brand Integration", "High Resolution"]
     },
     {
         id: 5,
-        slug: "music-video",
-        title: "Music Video",
-        description: "Create stunning music videos with our professional sets and lighting equipment.",
-        image: "https://images.pexels.com/photos/3045398/pexels-photo-3045398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        icon: Music,
-        features: ["Multiple Locations", "Lighting Effects", "Sound Setup", "Green Screen"]
-    },
-    {
-        id: 6,
-        slug: "celebrity",
-        title: "Celebrity Shoot",
-        description: "Premium photography services for celebrity portfolios and promotional content.",
-        image: "https://images.pexels.com/photos/6363874/pexels-photo-6363874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        slug: "baby-shoot",
+        title: "Baby Shoot",
+        description: "Adorable and professional photography sessions to capture your baby's precious moments.",
+        image: "https://ik.imagekit.io/c54qkthzl/Lighthouse-6.JPG?updatedAt=1737905436997",
         icon: Star,
-        features: ["Private Studio", "VIP Treatment", "Exclusive Sets", "Professional Team"]
+        features: ["Cute Props", "Safe Environment", "Gentle Lighting", "Experienced Photographers"]
     }
+
 ];
 
 // Company information

@@ -1,30 +1,42 @@
 {
   "sets": [
     {
-      "id": "light-room",
-      "title": "Light Room",
+      "id": "arabian-elegance",
+      "title": "Arabian Elegance",
       "subtitle": "Premium Photography Space",
-      "category": "Indoor",
-      "description": "Experience photography in our meticulously crafted Light Room, where every detail has been considered to create the perfect environment for your creative vision.",
+      "category": "outdoor",
+      "description": "Arabian-inspired design with arches, mosaics, balcony, pastel hues. The perfect backdrop for elegant shoots that capture the essence of Arabian architecture and style.",
       "features": [
-        "State-of-the-art lighting system",
-        "Multiple backdrop configurations",
-        "Professional grade equipment",
-        "Climate-controlled environment",
-        "Dedicated makeup and styling area"
+        "Authentic Arabian architectural elements",
+        "Beautiful mosaic designs",
+        "Elegant balcony setup",
+        "Pastel color palette",
+        "Multiple shooting angles"
       ],
       "images": [
         {
-          "url": "https://pixxelcity.com/wp-content/uploads/2024/05/Sumit-Zoting-photography-1.jpg",
-          "alt": "Light Room Main View"
+          "url": "https://ik.imagekit.io/c54qkthzl/Arabian-Elegance.JPG",
+          "alt": "Arabian Elegance premium photoshoot set with authentic arches and mosaics located in Nagpur SEDO"
         },
         {
-          "url": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32",
-          "alt": "Light Room Setup"
+          "url": "https://ik.imagekit.io/c54qkthzl/Arabian-Elegance-2.JPG",
+          "alt": "Arabian Elegance premium photoshoot set with authentic arches and mosaics located in Nagpur SEDO"
         },
         {
-          "url": "https://images.unsplash.com/photo-1520333789090-1afc82db536a",
-          "alt": "Light Room Portrait"
+          "url": "https://ik.imagekit.io/c54qkthzl/Arabian-Elegance-3.JPG",
+          "alt": "Arabian Elegance premium photoshoot set with authentic arches and mosaics located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Arabian-Elegance-4.jpg",
+          "alt": "Arabian Elegance premium photoshoot set with authentic arches and mosaics located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Arabian-Elegance-5.JPG",
+          "alt": "Arabian Elegance premium photoshoot set with authentic arches and mosaics located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Arabian-Elegance-6.JPG",
+          "alt": "Arabian Elegance premium photoshoot set with authentic arches and mosaics located in Nagpur SEDO"
         }
       ],
       "amenities": [
@@ -33,7 +45,1212 @@
         "Private changing rooms",
         "Equipment rental available",
         "Professional assistance"
-      ]
+      ],
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "bedroom-set",
+      "title": "Bedroom Set",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "Designed with a blend of simplicity and elegance, this set features a classic four-poster bed draped in sheer white lace curtains, creating a romantic and dreamy ambiance.",
+      "features": [
+        "Classic four-poster bed",
+        "Sheer white lace curtains",
+        "Romantic lighting setup",
+        "Dreamy ambiance",
+        "Elegant decor elements"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/BEDROOM.JPG",
+          "alt": "Elegant Bedroom Set featuring classic four-poster bed with sheer curtains for romantic photoshoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/BEDROOM-2.JPG",
+          "alt": "Elegant Bedroom Set featuring classic four-poster bed with sheer curtains for romantic photoshoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/BEDROOM-3.JPG",
+          "alt": "Elegant Bedroom Set featuring classic four-poster bed with sheer curtains for romantic photoshoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/BEDROOM-4.JPG",
+          "alt": "Elegant Bedroom Set featuring classic four-poster bed with sheer curtains for romantic photoshoots located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 4images"
+    },
+    {
+      "id": "blue-jodhpur",
+      "title": "Blue Jodhpur",
+      "subtitle": "Premium Photography Space",
+      "category": "outdoor",
+      "description": "Inspired by the iconic blue city of Jodhpur, this set features stunning azure walls adorned with intricate white motifs and floral planters, creating a visually striking and elegant backdrop.",
+      "features": [
+        "Authentic Jodhpur-inspired azure walls",
+        "Intricate white motifs",
+        "Beautiful floral planters",
+        "Elegant architectural elements",
+        "Visually striking color palette"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Blue-Jodhpur-6.jpg",
+          "alt": "Blue Jodhpur themed photoshoot set with stunning azure walls and intricate motifs inspired by Rajasthan located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Blue-Jodhpur-8.jpg",
+          "alt": "Blue Jodhpur themed photoshoot set with stunning azure walls and intricate motifs inspired by Rajasthan located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Blue-Jodhpur-5.jpg",
+          "alt": "Blue Jodhpur themed photoshoot set with stunning azure walls and intricate motifs inspired by Rajasthan located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Blue-Jodhpur-7.jpg",
+          "alt": "Blue Jodhpur themed photoshoot set with stunning azure walls and intricate motifs inspired by Rajasthan located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Blue-Jodhpur.JPG",
+          "alt": "Blue Jodhpur themed photoshoot set with stunning azure walls and intricate motifs inspired by Rajasthan located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Blue-Jodhpur-2.JPG",
+          "alt": "Blue Jodhpur themed photoshoot set with stunning azure walls and intricate motifs inspired by Rajasthan located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Blue-Jodhpur-3.JPG",
+          "alt": "Blue Jodhpur themed photoshoot set with stunning azure walls and intricate motifs inspired by Rajasthan located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Blue-Jodhpur-4.JPG",
+          "alt": "Blue Jodhpur themed photoshoot set with stunning azure walls and intricate motifs inspired by Rajasthan located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 8images from 5 it is small jpg"
+    },
+    {
+      "id": "cozy-library",
+      "title": "Cozy Library",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "Nestled amidst a serene ambiance, this cozy library offers a unique blend of elegance and warmth, perfect for capturing timeless moments. With its well-organized shelves and inviting atmosphere, it provides a picturesque setting that adds a touch of sophistication to your photos.",
+      "features": [
+        "Well-organized bookshelves",
+        "Inviting reading nooks",
+        "Elegant wooden furniture",
+        "Warm ambient lighting",
+        "Sophisticated literary atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Library.JPG",
+          "alt": "Cozy Library photoshoot set with elegant bookshelves and warm ambiance for sophisticated portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Library-5.jpg",
+          "alt": "Cozy Library photoshoot set with elegant bookshelves and warm ambiance for sophisticated portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Library-6.jpg",
+          "alt": "Cozy Library photoshoot set with elegant bookshelves and warm ambiance for sophisticated portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Library-4.JPG",
+          "alt": "Cozy Library photoshoot set with elegant bookshelves and warm ambiance for sophisticated portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Library-3.JPG",
+          "alt": "Cozy Library photoshoot set with elegant bookshelves and warm ambiance for sophisticated portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Library-2.JPG",
+          "alt": "Cozy Library photoshoot set with elegant bookshelves and warm ambiance for sophisticated portrait sessions located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "crimson-grace",
+      "title": "Crimson Grace",
+      "subtitle": "Premium Photography Space",
+      "category": "outdoor",
+      "description": "With its lush greenery, modern architecture, and serene ambiance, Crimson Grace sets the stage for capturing the magic of your love story, the beauty of motherhood, or the essence of your brand.",
+      "features": [
+        "Lush greenery surroundings",
+        "Modern architectural elements",
+        "Serene and peaceful ambiance",
+        "Versatile shooting space",
+        "Crimson color accents"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Crimson-grace.jpg",
+          "alt": "Crimson Grace photoshoot set with modern design and lush greenery perfect for couples and branding sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Crimson-grace-4.JPG",
+          "alt": "Crimson Grace photoshoot set with modern design and lush greenery perfect for couples and branding sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Crimson-grace-2.jpg",
+          "alt": "Crimson Grace photoshoot set with modern design and lush greenery perfect for couples and branding sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Crimson-grace-3.JPG",
+          "alt": "Crimson Grace photoshoot set with modern design and lush greenery perfect for couples and branding sessions located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 4images"
+    },
+    {
+      "id": "dark-room",
+      "title": "Dark Room",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "The Dark Room features sleek, modern design elements with moody lighting that creates a dramatic ambiance.",
+      "features": [
+        "Sleek modern design",
+        "Dramatic moody lighting",
+        "Contemporary furniture",
+        "Professional lighting setup",
+        "Versatile backdrop options"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Dark-Room-3.jpg",
+          "alt": "Dark Room photography studio with sleek modern design and dramatic mood lighting for professional shoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Dark-Room-4.jpeg",
+          "alt": "Dark Room photography studio with sleek modern design and dramatic mood lighting for professional shoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Dark-Room.JPG",
+          "alt": "Dark Room photography studio with sleek modern design and dramatic mood lighting for professional shoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Dark-Room-2.JPG",
+          "alt": "Dark Room photography studio with sleek modern design and dramatic mood lighting for professional shoots located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 4images from 3 to 7"
+    },
+    {
+      "id": "date-night",
+      "title": "Date Night",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "The Date Night set features a beautifully lit canopy adorned with twinkling fairy lights, creating a magical atmosphere. Surrounded by lush greenery and the soft glow of ambient lighting.",
+      "features": [
+        "Beautifully lit canopy",
+        "Twinkling fairy lights",
+        "Lush greenery accents",
+        "Soft ambient lighting",
+        "Romantic atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Date-Night-2.JPG",
+          "alt": "Date Night romantic set with fairy lights and beautifully lit canopy perfect for couples photoshoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Date-Night-3.JPG",
+          "alt": "Date Night romantic set with fairy lights and beautifully lit canopy perfect for couples photoshoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Date-Night-4.JPG",
+          "alt": "Date Night romantic set with fairy lights and beautifully lit canopy perfect for couples photoshoots located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 2images"
+    },
+    {
+      "id": "floral-arch",
+      "title": "Floral Arch",
+      "subtitle": "Premium Photography Space",
+      "category": "outdoor",
+      "description": "The Floral Arch set features a breathtaking archway adorned with vibrant flowers and twinkling fairy lights, creating a magical atmosphere. Surrounded by lush greenery and the soft glow of ambient lighting.",
+      "features": [
+        "Breathtaking floral archway",
+        "Vibrant flower arrangements",
+        "Twinkling fairy lights",
+        "Lush greenery surroundings",
+        "Ambient lighting effects"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Floral-Arch.jpg",
+          "alt": "Floral Arch photoshoot set with breathtaking flower arrangements and ambient lighting for wedding and portrait photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Floral-Arch-4.jpg",
+          "alt": "Floral Arch photoshoot set with breathtaking flower arrangements and ambient lighting for wedding and portrait photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Floral-Arch-3.JPG",
+          "alt": "Floral Arch photoshoot set with breathtaking flower arrangements and ambient lighting for wedding and portrait photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Floral-Arch-4.jpg",
+          "alt": "Floral Arch photoshoot set with breathtaking flower arrangements and ambient lighting for wedding and portrait photography located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 4images"
+    },
+    {
+      "id": "french-cafe",
+      "title": "French Cafe",
+      "subtitle": "Premium Photography Space",
+      "category": "outdoor",
+      "description": "The cafe's quaint ambiance, complete with vintage lampposts and cozy outdoor seating, exudes a romantic Parisian vibe that will make your photos truly unforgettable.",
+      "features": [
+        "Vintage lampposts",
+        "Cozy outdoor seating",
+        "Romantic Parisian vibe",
+        "Quaint cafe setup",
+        "European design elements"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/French-Cafe.jpeg",
+          "alt": "French Cafe themed photoshoot set with vintage lampposts and Parisian atmosphere for romantic portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/French-Cafe-7.jpg",
+          "alt": "French Cafe themed photoshoot set with vintage lampposts and Parisian atmosphere for romantic portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/French-Cafe-6.jpg",
+          "alt": "French Cafe themed photoshoot set with vintage lampposts and Parisian atmosphere for romantic portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/French-Cafe-4.JPG",
+          "alt": "French Cafe themed photoshoot set with vintage lampposts and Parisian atmosphere for romantic portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/French-Cafe-2.JPG",
+          "alt": "French Cafe themed photoshoot set with vintage lampposts and Parisian atmosphere for romantic portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/French-Cafe-3.JPG",
+          "alt": "French Cafe themed photoshoot set with vintage lampposts and Parisian atmosphere for romantic portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/French-Cafe-5.JPG",
+          "alt": "French Cafe themed photoshoot set with vintage lampposts and Parisian atmosphere for romantic portrait sessions located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 7images from 6 ,7 jpg"
+    },
+    {
+      "id": "glass-house",
+      "title": "Glass House",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "The Glass House features a modern, transparent structure that allows for stunning views of the surrounding landscape, creating a dreamy backdrop for your special moments. Whether you're capturing the love between a couple, the joy of expectant parents, or the essence of your brand, this versatile space can be tailored to fit any theme or style.",
+      "features": [
+        "Modern transparent structure",
+        "Stunning landscape views",
+        "Dreamy natural lighting",
+        "Versatile shooting space",
+        "Contemporary design elements"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Glass-House.jpg",
+          "alt": "Glass House modern photography set with transparent structure and natural lighting for versatile photoshoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Glass-House-3.JPG",
+          "alt": "Glass House modern photography set with transparent structure and natural lighting for versatile photoshoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Glass-House-5.JPG",
+          "alt": "Glass House modern photography set with transparent structure and natural lighting for versatile photoshoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Glass-House-4.jpg",
+          "alt": "Glass House modern photography set with transparent structure and natural lighting for versatile photoshoots located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "indo-ethnic",
+      "title": "Indo Ethnic",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "The Indo-Ethnic set features ornate jharokhas (windows), elegant chandeliers, and a striking color palette that exudes royalty and charm. The checkered flooring and intricate wall designs create a visually stunning backdrop that will make your photos stand out.",
+      "features": [
+        "Ornate jharokhas (windows)",
+        "Elegant chandeliers",
+        "Royal color palette",
+        "Checkered flooring",
+        "Intricate wall designs"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Indo-Ethnic.JPG",
+          "alt": "Indo Ethnic luxury photoshoot set with ornate jharokhas and royal decor for traditional themed portraits located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Indo-Ethnic-2.JPG",
+          "alt": "Indo Ethnic luxury photoshoot set with ornate jharokhas and royal decor for traditional themed portraits located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Indo-Ethnic-3.JPG",
+          "alt": "Indo Ethnic luxury photoshoot set with ornate jharokhas and royal decor for traditional themed portraits located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 3images"
+    },
+    {
+      "id": "playful-pantry",
+      "title": "Playful Pantry",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "The Playful Pantry offers a unique and visually appealing setting. The colorful cabinets, playful wall art, and quirky kitchen accessories create a fun and engaging atmosphere that will make your photos stand out.",
+      "features": [
+        "Colorful cabinet design",
+        "Playful wall art",
+        "Quirky kitchen accessories",
+        "Fun and engaging atmosphere",
+        "Vibrant color palette"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Kitchen.JPG",
+          "alt": "Playful Pantry kitchen themed photoshoot set with colorful cabinets and quirky accessories for lifestyle photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Kitchen-4.JPG",
+          "alt": "Playful Pantry kitchen themed photoshoot set with colorful cabinets and quirky accessories for lifestyle photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Kitchen-3.JPG",
+          "alt": "Playful Pantry kitchen themed photoshoot set with colorful cabinets and quirky accessories for lifestyle photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Kitchen-2.JPG",
+          "alt": "Playful Pantry kitchen themed photoshoot set with colorful cabinets and quirky accessories for lifestyle photography located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "rustic-arches",
+      "title": "Rustic Arches",
+      "subtitle": "Premium Photography Space",
+      "category": "outdoor",
+      "description": "A rustic yet elegant outdoor photography setup that beautifully blends natural elements with architectural charm. Designed with exposed brick arches and vintage aesthetics.",
+      "features": [
+        "Exposed brick arches",
+        "Vintage aesthetic elements",
+        "Natural textures",
+        "Rustic charm",
+        "Architectural details"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Rustic-Arches.JPG",
+          "alt": "Rustic Arches outdoor set featuring exposed brick architecture and vintage elements for elegant photoshoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Rustic-Arches-3.jpeg",
+          "alt": "Rustic Arches outdoor set featuring exposed brick architecture and vintage elements for elegant photoshoots located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Rustic-Arches-2.JPG",
+          "alt": "Rustic Arches outdoor set featuring exposed brick architecture and vintage elements for elegant photoshoots located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 2images"
+    },
+    {
+      "id": "retro-studio",
+      "title": "Retro Studio",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "Featuring vintage props like an antique gramophone, retro television, and warm, ambient lighting, the studio creates a cozy and romantic atmosphere. The wooden backdrop and soft glow of string lights add a touch of magic, making every photograph a cherished memory.",
+      "features": [
+        "Antique gramophone",
+        "Retro television set",
+        "Warm ambient lighting",
+        "Wooden backdrop elements",
+        "String light decorations"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Lighthouse-6.JPG",
+          "alt": "Retro Studio photoshoot set with vintage props and warm ambient lighting for nostalgic portrait photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Lighthouse.jpg",
+          "alt": "Retro Studio photoshoot set with vintage props and warm ambient lighting for nostalgic portrait photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Lighthouse-2.jpg",
+          "alt": "Retro Studio photoshoot set with vintage props and warm ambient lighting for nostalgic portrait photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Lighthouse-4.JPG",
+          "alt": "Retro Studio photoshoot set with vintage props and warm ambient lighting for nostalgic portrait photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Lighthouse-3.jpeg",
+          "alt": "Retro Studio photoshoot set with vintage props and warm ambient lighting for nostalgic portrait photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Lighthouse-5.jpg",
+          "alt": "Retro Studio photoshoot set with vintage props and warm ambient lighting for nostalgic portrait photography located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "elegant-bar",
+      "title": "Elegant Bar",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "The hexagonal shelves, illuminated with soft lighting, showcase an array of beverages, adding a touch of elegance and fun. The plush blue bar stools and geometric-patterned bar front create a visually appealing backdrop, ideal for capturing memorable moments.",
+      "features": [
+        "Hexagonal illuminated shelves",
+        "Plush blue bar stools",
+        "Geometric-patterned bar front",
+        "Soft accent lighting",
+        "Contemporary design elements"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Bar-2.JPG",
+          "alt": "Elegant Bar photoshoot set with illuminated shelves and contemporary design for upscale portrait and lifestyle photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Bar-3.JPG",
+          "alt": "Elegant Bar photoshoot set with illuminated shelves and contemporary design for upscale portrait and lifestyle photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Bar-4.jpg",
+          "alt": "Elegant Bar photoshoot set with illuminated shelves and contemporary design for upscale portrait and lifestyle photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Bar.jpg",
+          "alt": "Elegant Bar photoshoot set with illuminated shelves and contemporary design for upscale portrait and lifestyle photography located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "luminous-pathway",
+      "title": "Luminous Pathway",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "The Luminous Pathway at Pixxel City, Nagpur, is a breathtaking photoshoot location, perfect for pre-wedding, maternity, and portfolio shoots. This glowing tunnel, adorned with radiant LED arches and twinkling chandeliers, creates a dreamy, cinematic ambiance. The soft, golden illumination adds a touch of romance and elegance, making it an ideal backdrop for capturing love, joy, and timeless memories.",
+      "features": [
+        "Radiant LED arches",
+        "Twinkling chandeliers",
+        "Dreamy golden illumination",
+        "Tunnel effect perspective",
+        "Cinematic lighting setup"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Luminous-Pathway.JPG",
+          "alt": "Luminous Pathway with glowing LED arches and golden illumination for magical portrait photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Luminous-Pathway-2.jpg",
+          "alt": "Luminous Pathway with glowing LED arches and golden illumination for magical portrait photography located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "london-street",
+      "title": "London Street",
+      "subtitle": "Premium Photography Space",
+      "category": "outdoor",
+      "description": "Step into a charming European setting at London Street in Pixxel City, Nagpur—an ideal backdrop for pre-wedding, maternity, and portfolio shoots. Inspired by the vibrant streets of London, this set features classic British architecture, vintage lamp posts, and a lively café-style ambiance. The pastel hues, intricate details, and iconic red telephone booth add a cinematic charm, creating picture-perfect frames for couples, expecting mothers, and aspiring models.",
+      "features": [
+        "Classic British architecture",
+        "Vintage lamp posts",
+        "Iconic red telephone booth",
+        "Pastel color palette",
+        "Café-style ambiance"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/London-Street.JPG",
+          "alt": "London Street themed photoshoot set with British architecture and red telephone booth for European style portraits located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/London-Street-2.JPG",
+          "alt": "London Street themed photoshoot set with British architecture and red telephone booth for European style portraits located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/London-Street-5.jpg",
+          "alt": "London Street themed photoshoot set with British architecture and red telephone booth for European style portraits located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "majestic-flora",
+      "title": "Majestic Flora",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "Majestic Flora at Pixxel City, Nagpur is the perfect blend of royalty and elegance, designed for breathtaking pre-wedding, maternity, and portfolio shoots. With its deep blue and gold-themed interiors, vintage chandeliers, and classic checkered flooring, this setup radiates a regal charm. The intricately framed walls and luxurious ambiance create a sophisticated backdrop for capturing romantic moments, timeless maternity portraits, and stylish fashion portfolios.",
+      "features": [
+        "Deep blue and gold themed interior",
+        "Vintage chandeliers",
+        "Classic checkered flooring",
+        "Intricately framed walls",
+        "European-inspired design"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Majestic-Flora.jpg",
+          "alt": "Majestic Flora royal themed photoshoot set with blue and gold interiors for elegant portrait photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Majestic-Flora-2.JPG",
+          "alt": "Majestic Flora royal themed photoshoot set with blue and gold interiors for elegant portrait photography located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Majestic-Flora-3.jpg",
+          "alt": "Majestic Flora royal themed photoshoot set with blue and gold interiors for elegant portrait photography located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "melody-piano",
+      "title": "Melody Piano",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "Melody Piano at Pixxel City, Nagpur is an exquisite indoor setup designed for pre-wedding, maternity, and portfolio shoots. Featuring a grand black piano, an artistic backdrop with geometric frames, and an oversized vintage clock, this space exudes elegance and sophistication. The checkered black-and-white flooring adds a touch of classic charm, making every shot visually striking.",
+      "features": [
+        "Grand black piano centerpiece",
+        "Artistic geometric frame backdrop",
+        "Oversized vintage clock",
+        "Checkered black-and-white flooring",
+        "Elegant sophisticated atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Melody-Piano.JPG",
+          "alt": "Melody Piano music themed photoshoot set with grand piano and vintage clock for sophisticated portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Melody-Piano-2.JPG",
+          "alt": "Melody Piano music themed photoshoot set with grand piano and vintage clock for sophisticated portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Melody-Piano-4.JPG",
+          "alt": "Melody Piano music themed photoshoot set with grand piano and vintage clock for sophisticated portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Melody-Piano-6.JPG",
+          "alt": "Melody Piano music themed photoshoot set with grand piano and vintage clock for sophisticated portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Melody-Piano-5.JPG",
+          "alt": "Melody Piano music themed photoshoot set with grand piano and vintage clock for sophisticated portrait sessions located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/Melody-Piano-3.JPG",
+          "alt": "Melody Piano music themed photoshoot set with grand piano and vintage clock for sophisticated portrait sessions located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "monochrome",
+      "title": "Monochrome",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "Step into timeless elegance at the Monochrome Set in Pixxel City, Nagpur. This sophisticated black-and-white theme creates a dramatic visual contrast that enhances every frame. Ideal for pre-wedding shoots, maternity portraits, and fashion portfolios, this minimalist setup exudes class and style. Capture your special moments with a touch of cinematic allure in this strikingly bold environment.",
+      "features": [
+        "Professional lighting setup",
+        "Multiple shooting angles",
+        "Versatile backdrop options",
+        "Premium design elements",
+        "Unique theme and atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Monochrome_Set-3_FrQ8lg4-g.JPG?updatedAt=1746041682224",
+          "alt": "Monochrome premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Monochrome_Set-1_Dg4-v-Uql.JPG?updatedAt=1746041684481",
+          "alt": "Monochrome premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Monochrome_Set-2_fst2DRBpi.JPG?updatedAt=1746041692597",
+          "alt": "Monochrome premium photoshoot set located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 3images"
+    },
+    {
+      "id": "palmparadise",
+      "title": "Palmparadise",
+      "subtitle": "Premium Photography Space",
+      "category": "outdoor",
+      "description": "Embrace tropical vibes at Palm Paradise, a lush escape right in the heart of Pixxel City, Nagpur. With vibrant greenery and exotic palms, this set brings nature's calm to your pre-wedding, maternity, or portfolio shoot. Let the serene, sun-drenched backdrop enhance your pictures with freshness and flair—perfect for romantic and joyful storytelling.",
+      "features": [
+        "Professional lighting setup",
+        "Multiple shooting angles",
+        "Versatile backdrop options",
+        "Premium design elements",
+        "Unique theme and atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Palm_Paradise_Set-1_tsea_ajx-.jpg?updatedAt=1746041698031",
+          "alt": "Palmparadise premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Palm_Paradise_Set-2_wRHJzg_oV.jpg?updatedAt=1746041700873",
+          "alt": "Palmparadise premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Palm_Paradise_Set-3_gw9L1LmS2z.JPG?updatedAt=1746041712294",
+          "alt": "Palmparadise premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Palm_Paradise_Set-5_oY6gIAHulB.JPG?updatedAt=1746041714114",
+          "alt": "Palmparadise premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Palm_Paradise_Set-4_q-JZYViAG.JPG?updatedAt=1746041723613",
+          "alt": "Palmparadise premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Palm_Paradise_Set-6_Zq8FzrdT8r.JPG?updatedAt=1746041752499",
+          "alt": "Palmparadise premium photoshoot set located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 6images"
+    },
+    {
+      "id": "piece-of-greece",
+      "title": "Piece Of Greece",
+      "subtitle": "Premium Photography Space",
+      "category": "outdoor",
+      "description": "Transport yourself to the Mediterranean with the Piece of Greece set at Pixxel City. White-washed walls, blue accents, and breezy vibes create the perfect Santorini-style ambiance for dreamy pre-wedding and maternity shoots. This set infuses your photos with a touch of wanderlust and timeless beauty.",
+      "features": [
+        "Professional lighting setup",
+        "Multiple shooting angles",
+        "Versatile backdrop options",
+        "Premium design elements",
+        "Unique theme and atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Peice_of_Greece_Set-2_XhCWjQFYj.JPG?updatedAt=1746041756948",
+          "alt": "Piece Of Greece premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Peice_of_Greece_Set-1_KLBkd-8DX.JPG?updatedAt=1746041768870",
+          "alt": "Piece Of Greece premium photoshoot set located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 2images"
+    },
+    {
+      "id": "royal-swing",
+      "title": "Royal Swing",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "Add a regal flair to your shoot with the Royal Swing set. Featuring an ornate swing and vintage décor, this set is perfect for capturing grand, romantic, or maternity moments. The royal color palette and majestic design elements elevate every frame with elegance and poise.",
+      "features": [
+        "Professional lighting setup",
+        "Multiple shooting angles",
+        "Versatile backdrop options",
+        "Premium design elements",
+        "Unique theme and atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Royal_Swing_-_Set-1_Za8N3tYoz.JPG?updatedAt=1746041773680",
+          "alt": "Royal Swing premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Royal_Swing_-_Set-3_pbaauRO01.JPG?updatedAt=1746041778643",
+          "alt": "Royal Swing premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Royal_Swing_-_Set-2_IZyi0Du2s.JPG?updatedAt=1746041781223",
+          "alt": "Royal Swing premium photoshoot set located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 3images"
+    },
+    {
+      "id": "royal-touch",
+      "title": "Royal Touch",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "Unveil luxury with the Royale Touch set at Pixxel City. This beautifully curated space combines rich textures, antique furniture, and bold tones to offer a premium backdrop for pre-wedding, maternity, and high-fashion shoots. Make a statement with portraits that exude class and charm.",
+      "features": [
+        "Professional lighting setup",
+        "Multiple shooting angles",
+        "Versatile backdrop options",
+        "Premium design elements",
+        "Unique theme and atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Royale_Touch_Set-2_cA23tkfqp.JPG?updatedAt=1746041786703",
+          "alt": "Royal Touch premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Royale_Touch_Set-1_mhas2476wG.JPG?updatedAt=1746041787378",
+          "alt": "Royal Touch premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Royale_Touch_Set-3_OoRm6rENXR.JPG?updatedAt=1746041799328",
+          "alt": "Royal Touch premium photoshoot set located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 3images"
+    },
+    {
+      "id": "rustic-archs",
+      "title": "Rustic Archs",
+      "subtitle": "Premium Photography Space",
+      "category": "outdoor",
+      "description": "For those who adore rustic beauty, the Rustic Arches set blends vintage charm with textured elegance. Its earthy tones, archways, and antique aesthetics make it ideal for romantic, boho-style pre-wedding and maternity shoots. Capture the warmth of your moments in this cozy, soulful setting.",
+      "features": [
+        "Professional lighting setup",
+        "Multiple shooting angles",
+        "Versatile backdrop options",
+        "Premium design elements",
+        "Unique theme and atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Rustic_Arches-2_4jiJDxZxF.jpeg?updatedAt=1746041803345",
+          "alt": "Rustic Archs premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Rustic_Arches-3_8uuX7G61i.JPG?updatedAt=1746041808413",
+          "alt": "Rustic Archs premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Rustic_Arches-1_UB9uWjLjf.JPG?updatedAt=1746041809881",
+          "alt": "Rustic Archs premium photoshoot set located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 3images"
+    },
+    {
+      "id": "santorini",
+      "title": "Santorini",
+      "subtitle": "Premium Photography Space",
+      "category": "outdoor",
+      "description": "Experience the magic of the Greek isles at the Santorini Set. With classic blue-and-white architecture, this setup adds a dreamy, sun-kissed touch to your photos. Whether for a pre-wedding or maternity session, it offers the perfect blend of romance and vacation vibes.",
+      "features": [
+        "Professional lighting setup",
+        "Multiple shooting angles",
+        "Versatile backdrop options",
+        "Premium design elements",
+        "Unique theme and atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Santorini_Set-1_r1rOGY74w.JPG?updatedAt=1746041815365",
+          "alt": "Santorini premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Santorini_Set-2_S1Hi1icPw.JPG?updatedAt=1746041815490",
+          "alt": "Santorini premium photoshoot set located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 2images"
+    },
+    {
+      "id": "starry-walkaway",
+      "title": "Starry Walkaway",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "Walk under a canopy of lights at the Starry Walkway set—Pixxel City's most enchanting evening shoot location. Ideal for romantic or glamorous portraits, this glowing path adds a dreamy, magical element to your pre-wedding, maternity, or fashion shoot.",
+      "features": [
+        "Professional lighting setup",
+        "Multiple shooting angles",
+        "Versatile backdrop options",
+        "Premium design elements",
+        "Unique theme and atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Starry_Walkway_Set-1_6EE3Mszxl.JPG?updatedAt=1746041818939",
+          "alt": "Starry Walkaway premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Starry_Walkway_Set-2_ENDTAwva8a.JPG?updatedAt=1746041819593",
+          "alt": "Starry Walkaway premium photoshoot set located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 2images"
+    },
+    {
+      "id": "the-crystal-court",
+      "title": "The Crystal Court",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "Opulence meets modern glamour at The Crystal Court set. Reflective surfaces, dazzling chandeliers, and sleek architecture create a premium ambiance for high-end portfolios and elegant couple portraits. Shine bright in this luxurious photo zone.",
+      "features": [
+        "Professional lighting setup",
+        "Multiple shooting angles",
+        "Versatile backdrop options",
+        "Premium design elements",
+        "Unique theme and atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/The_Crystal_Court_Set-1_rVfXYxGvR.JPG?updatedAt=1746041824400",
+          "alt": "The Crystal Court premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/The_Crystal_Court_Set-2_IPE_xJwf0.JPG?updatedAt=1746041828297",
+          "alt": "The Crystal Court premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/The_Crystal_Court_Set-4_cv9X9fusET.JPG?updatedAt=1746041874090",
+          "alt": "The Crystal Court premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/The_Crystal_Court_Set-3_4N2bPzkFe.JPG?updatedAt=1746041879024",
+          "alt": "The Crystal Court premium photoshoot set located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 4images"
+    },
+    {
+      "id": "the-rug-royalty",
+      "title": "The Rug Royalty",
+      "subtitle": "Premium Photography Space",
+      "category": "indoor",
+      "description": "Step into culture and class with The Rug Royalty set. Featuring exotic carpets and royal décor, it evokes a sense of tradition fused with elegance. Perfect for showcasing pre-wedding grandeur or regal maternity portraits in a classic, timeless style.",
+      "features": [
+        "Professional lighting setup",
+        "Multiple shooting angles",
+        "Versatile backdrop options",
+        "Premium design elements",
+        "Unique theme and atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/The_Rug_Royalty_Set-1_SI61nmcQ2l.jpg?updatedAt=1746041892167",
+          "alt": "The Rug Royalty premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/The_Rug_Royalty_Set-2_5JIex1yxP.JPG?updatedAt=1746041898927",
+          "alt": "The Rug Royalty premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/The_Rug_Royalty_Set-5_5Hbn7AuIP.JPG?updatedAt=1746041905718",
+          "alt": "The Rug Royalty premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/The_Rug_Royalty_Set-3_cWKhffLcl.JPG?updatedAt=1746041935011",
+          "alt": "The Rug Royalty premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/The_Rug_Royalty_Set-4_wKMOVB1I4.JPG?updatedAt=1746041935728",
+          "alt": "The Rug Royalty premium photoshoot set located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 5images"
+    },
+    {
+      "id": "twilight-charm",
+      "title": "Twilight Charm",
+      "subtitle": "Premium Photography Space",
+      "category": "outdoor",
+      "description": "Capture the magic of dusk at Twilight Charm. With glowing lights and romantic tones, this atmospheric set is tailored for intimate pre-wedding and maternity photos. Let the soft hues of twilight highlight your emotions in every frame.",
+      "features": [
+        "Professional lighting setup",
+        "Multiple shooting angles",
+        "Versatile backdrop options",
+        "Premium design elements",
+        "Unique theme and atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Twilight_Charm_Set-4_t6f5x97IN.JPG?updatedAt=1746041943031",
+          "alt": "Twilight Charm premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Twilight_Charm_Set-1_r55jbxkoD.jpg?updatedAt=1746041951995",
+          "alt": "Twilight Charm premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Twilight_Charm_Set-2_TiRVowWJQ.JPG?updatedAt=1746041955893",
+          "alt": "Twilight Charm premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Twilight_Charm_Set-3_So8zkMiSh.JPG?updatedAt=1746041961375",
+          "alt": "Twilight Charm premium photoshoot set located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 4images"
+    },
+    {
+      "id": "utopian-street",
+      "title": "Utopian Street",
+      "subtitle": "Premium Photography Space",
+      "category": "outdoor",
+      "description": "Explore urban charm at Utopian Street—Pixxel City's stylish cityscape backdrop. With chic colors and modern street-style aesthetics, it's perfect for fashion portfolios, couple shoots, and lifestyle content. Add a contemporary twist to your memories.",
+      "features": [
+        "Professional lighting setup",
+        "Multiple shooting angles",
+        "Versatile backdrop options",
+        "Premium design elements",
+        "Unique theme and atmosphere"
+      ],
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Utopian_Street_Set-4_YV0YMs8qp.JPG?updatedAt=1746041966864",
+          "alt": "Utopian Street premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Utopian_Street_Set-2_8ivgdyCxy.jpg?updatedAt=1746041967273",
+          "alt": "Utopian Street premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Utopian_Street_Set-3_H0IuuEL67.jpg?updatedAt=1746041969288",
+          "alt": "Utopian Street premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Utopian_Street_Set-1_gGkK-4JKC.jpg?updatedAt=1746041981925",
+          "alt": "Utopian Street premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Utopian_Street_Set-5_eVdxWIA98.JPG?updatedAt=1746041984666",
+          "alt": "Utopian Street premium photoshoot set located in Nagpur SEDO"
+        },
+        {
+          "url": "https://ik.imagekit.io/c54qkthzl/uploads/Utopian_Street_Set-6_tI8_VdyvT.JPG?updatedAt=1746042015314",
+          "alt": "Utopian Street premium photoshoot set located in Nagpur SEDO"
+        }
+      ],
+      "amenities": [
+        "Complimentary refreshments",
+        "High-speed WiFi",
+        "Private changing rooms",
+        "Equipment rental available",
+        "Professional assistance"
+      ],
+      "price": "from $150/hour 6images"
     }
   ]
 }

@@ -5,37 +5,32 @@ import SectionHeading from "../common/SectionHeading.astro";
 import grid from "../../assets/Grid.svg"
 import { Image } from "astro:assets";
 
-// Get the base URL from Astro's environment
-const baseUrl = import.meta.env.BASE_URL || '';
 
 const sets = [
   {
-    title: "Light Room",
-    description: "A serene space where soft tones and gentle lighting create a spellbinding atmosphere.",
-    image: "https://pixxelcity.com/wp-content/uploads/2024/05/Sumit-Zoting-photography-1.jpg",
-    tags: ["Indoor", "Natural Light", "Modern"],
-    availability: "Most Popular",
-    price: "₹7,999/hour",
-    size: "1200 sq.ft"
+    title: "Crimson Grace",
+    description: "With its lush greenery, modern architecture, and serene ambiance, perfect for capturing the magic of your love story.",
+    caption: "Crimson Grace photography set at Pixxel City Nagpur - Elegant outdoor backdrop with modern design and lush greenery for premium photoshoots in Nagpur",
+    image: "https://ik.imagekit.io/c54qkthzl/Crimson-grace.jpg",
+    tags: ["Outdoor", "Modern", "Elegant"],
+    availability: "Most Popular"
   },
   {
-    title: "Mexican Street",
-    description: "Vibrant and colorful setup inspired by the lively streets of Mexico.",
-    image: "https://pixxelcity.com/wp-content/uploads/2024/05/Maxican-street-5.jpeg",
-    tags: ["Outdoor", "Colorful", "Cultural"],
-    availability: "New Addition",
-    price: "₹8,999/hour",
-    size: "2000 sq.ft"
+    title: "Blue Jodhpur",
+    description: "Inspired by the iconic blue city of Jodhpur, featuring stunning azure walls with intricate white motifs.",
+    caption: "Blue Jodhpur themed photography set at Pixxel City Nagpur - Cultural backdrop with azure walls and white motifs for professional portrait sessions in Nagpur",
+    image: "https://ik.imagekit.io/c54qkthzl/Blue-Jodhpur-6.jpg",
+    tags: ["Outdoor", "Cultural", "Vibrant"],
+    availability: "Customer Favorite"
   },
   {
-    title: "Royale Touch",
-    description: "Opulent setting fit for kings and queens, perfect for royal-themed shoots.",
-    image: "https://pixxelcity.com/wp-content/uploads/2024/05/Royal-touch-5.jpeg",
-    tags: ["Indoor", "Luxury", "Classic"],
-    availability: "Limited Time",
-    price: "₹12,999/hour",
-    size: "1800 sq.ft"
-  },
+    title: "Date Night",
+    description: "A beautifully lit canopy adorned with twinkling fairy lights, creating a magical romantic atmosphere.",
+    caption: "Date Night romantic photography set at Pixxel City Nagpur - Intimate setup with canopy and fairy lights for couples photoshoots in Nagpur's premium studio",
+    image: "https://ik.imagekit.io/c54qkthzl/Date-Night-3.JPG",
+    tags: ["Indoor", "Romantic", "Intimate"],
+    availability: "Limited Time"
+  }
 ];
 ---
 
@@ -50,7 +45,7 @@ const sets = [
       subtitle="Step into worlds crafted for your perfect shot"
     />
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
       {
         sets.map((set) => (
           <div class="group relative">
@@ -67,9 +62,9 @@ const sets = [
               <div class="aspect-[16/10] relative overflow-hidden">
                 <Image
                 width={400}
-                height={500}
+                height={250}
                   src={set.image}
-                  alt={set.title}
+                  alt={set.caption}
                   class="h-full w-full object-cover transition-all duration-1000 ease-out group-hover:scale-105"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out pointer-events-none" />
@@ -95,7 +90,7 @@ const sets = [
 
                 <!-- Changed to an anchor tag with proper href -->
                 <a 
-                  href={`${baseUrl}venues/sets/${set.title.toLowerCase().replace(/\s+/g, '-')}`}
+                  href={`/venues/${set.title.toLowerCase().replace(/\s+/g, '-')}`}
                   class="w-full inline-flex items-center justify-center rounded-xl bg-secondary px-5 py-3 text-sm font-medium
                   text-secondary-foreground/80 transition-all duration-500 ease-out border border-primary/90 hover:bg-gradient-to-r hover:from-primary/90 hover:to-primary
                   hover:text-white group cursor-pointer z-10"
@@ -116,7 +111,7 @@ const sets = [
     <div class="mt-16 text-center">
       <!-- Standard approach with correct attributes -->
       <a 
-        href={`${baseUrl}venues`}
+        href={`/venues`}
         class="venues-link inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-gradient-to-r from-primary/90 to-primary text-white text-sm font-medium transition-all duration-500 ease-out hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 cursor-pointer z-50"
       >
         Explore All Sets

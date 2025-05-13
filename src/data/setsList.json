@@ -4,7 +4,7 @@
       "id": "arabian-elegance",
       "title": "Arabian Elegance",
       "description": "Arabian-inspired design with arches, mosaics, balcony, pastel hues.",
-      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Arabian-Elegance.JPG",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/Arabian-Elegance-4.jpg",
       "category": "outdoor"
     },
     {
@@ -132,6 +132,90 @@
       "description": "Melody Piano: grand piano, geometric frames, vintage clock, timeless elegance.",
       "imageUrl": "https://ik.imagekit.io/c54qkthzl/Melody-Piano.JPG",
       "category": "indoor"
+    },
+    {
+      "id": "monochrome",
+      "title": "Monochrome",
+      "description": "Sophisticated black-and-white theme with dramatic contrast, perfect for elegant portraits.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/uploads/Monochrome_Set-3_FrQ8lg4-g.JPG?updatedAt=1746041682224",
+      "category": "indoor"
+    },
+    {
+      "id": "palmparadise",
+      "title": "Palmparadise",
+      "description": "Tropical vibes with lush greenery and exotic palms, perfect for sun-drenched portraits.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/uploads/Palm_Paradise_Set-1_tsea_ajx-.jpg?updatedAt=1746041698031",
+      "category": "outdoor"
+    },
+    {
+      "id": "piece-of-greece",
+      "title": "Piece Of Greece",
+      "description": "Mediterranean-inspired set with white-washed walls and blue accents for dreamy shoots.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/uploads/Peice_of_Greece_Set-2_XhCWjQFYj.JPG?updatedAt=1746041756948",
+      "category": "outdoor"
+    },
+    {
+      "id": "royal-swing",
+      "title": "Royal Swing",
+      "description": "Ornate swing with vintage decor and royal color palette for elegant portraits.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/uploads/Royal_Swing_-_Set-1_Za8N3tYoz.JPG?updatedAt=1746041773680",
+      "category": "indoor"
+    },
+    {
+      "id": "royal-touch",
+      "title": "Royal Touch",
+      "description": "Rich textures, antique furniture and bold tones for premium high-fashion shoots.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/uploads/Royale_Touch_Set-2_cA23tkfqp.JPG?updatedAt=1746041786703",
+      "category": "indoor"
+    },
+    {
+      "id": "rustic-archs",
+      "title": "Rustic Archs",
+      "description": "Vintage charm with textured elegance and earthy tones for boho-style shoots.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/uploads/Rustic_Arches-2_4jiJDxZxF.jpeg?updatedAt=1746041803345",
+      "category": "outdoor"
+    },
+    {
+      "id": "santorini",
+      "title": "Santorini",
+      "description": "Classic blue-and-white architecture for dreamy, sun-kissed photos with vacation vibes.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/uploads/Santorini_Set-1_r1rOGY74w.JPG?updatedAt=1746041815365",
+      "category": "outdoor"
+    },
+    {
+      "id": "starry-walkaway",
+      "title": "Starry Walkaway",
+      "description": "Enchanting canopy of lights creating a magical path for romantic evening portraits.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/uploads/Starry_Walkway_Set-1_6EE3Mszxl.JPG?updatedAt=1746041818939",
+      "category": "indoor"
+    },
+    {
+      "id": "the-crystal-court",
+      "title": "The Crystal Court",
+      "description": "Reflective surfaces and dazzling chandeliers for high-end, elegant couple portraits.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/uploads/The_Crystal_Court_Set-1_rVfXYxGvR.JPG?updatedAt=1746041824400",
+      "category": "indoor"
+    },
+    {
+      "id": "the-rug-royalty",
+      "title": "The Rug Royalty",
+      "description": "Exotic carpets and royal décor with traditional elegance for timeless portraits.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/uploads/The_Rug_Royalty_Set-1_SI61nmcQ2l.jpg?updatedAt=1746041892167",
+      "category": "indoor"
+    },
+    {
+      "id": "twilight-charm",
+      "title": "Twilight Charm",
+      "description": "Glowing lights and romantic tones creating an atmospheric setting for intimate photos.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/uploads/Twilight_Charm_Set-4_t6f5x97IN.JPG?updatedAt=1746041943031",
+      "category": "outdoor"
+    },
+    {
+      "id": "utopian-street",
+      "title": "Utopian Street",
+      "description": "Stylish cityscape backdrop with modern street-style aesthetics for contemporary shoots.",
+      "imageUrl": "https://ik.imagekit.io/c54qkthzl/uploads/Utopian_Street_Set-4_YV0YMs8qp.JPG?updatedAt=1746041966864",
+      "category": "outdoor"
     }
   ],
   "categories": ["all", "indoor", "outdoor"]

@@ -1,6 +1,6 @@
 ---
 import { Camera, ArrowRight } from "lucide-react";
-import { CONTACT, COMPANY } from "../../utils/constants";
+import { COMPANY } from "../../utils/constants";
 import Container from "../common/Container.astro";
 import ImageMarquee from "../../components/home/Marquee";
 import { HomeStatsSection } from "./animatedStats";
@@ -12,32 +12,31 @@ const MARQUEE_IMAGE_HEIGHT = 300;
 
 // Video configuration
 const heroVideo = {
-  src: "https://videos.pexels.com/video-files/1263198/1263198-uhd_2560_1440_30fps.mp4", // Update with your actual video path
-  poster:
-    "https://pixxelcity.com/wp-content/uploads/2024/11/Snapinsta.app_409177592_911120947024505_1519823328981384121_n_1080.jpg",
+  src: "https://ik.imagekit.io/c54qkthzl/pixxelcity-nagpur.mp4", // Update with your actual video path
+  poster: "https://ik.imagekit.io/c54qkthzl/London-Street-5.jpg",
   alt: "Featured Photography & Videography",
 };
 
 // Images for the marquee
 const marqueeImages = [
   {
-    src: "https://pixxelcity.com/wp-content/uploads/2024/11/IMG_20241108_181458_617.webp",
-    alt: "Maternity Photography",
-    category: "Maternity",
+    src: "https://ik.imagekit.io/c54qkthzl/retro-studio-baby_shoot.jpg",
+    alt: "Baby Photography",
+    category: "baby-shoot",
     width: MARQUEE_IMAGE_WIDTH,
     height: MARQUEE_IMAGE_HEIGHT,
   },
   {
-    src: "https://pixxelcity.com/wp-content/uploads/2024/05/Vipin-Photography-2-Retro-Kitchen-scaled.jpg",
+    src: "https://ik.imagekit.io/c54qkthzl/Kitchen.JPG",
     alt: "Pre-wedding Shoot",
     category: "Pre-Wedding",
     width: MARQUEE_IMAGE_WIDTH,
     height: MARQUEE_IMAGE_HEIGHT,
   },
   {
-    src: "https://pixxelcity.com/wp-content/uploads/2024/05/0C9A6819-scaled.jpg",
-    alt: "Video Shoot",
-    category: "Long-Video",
+    src: "https://ik.imagekit.io/c54qkthzl/Santorini-brand-shoot.jpg",
+    alt: "brand Shoot",
+    category: "brand shoot",
     width: MARQUEE_IMAGE_WIDTH,
     height: MARQUEE_IMAGE_HEIGHT,
   },

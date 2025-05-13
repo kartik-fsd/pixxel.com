@@ -2,6 +2,7 @@
 import MainLayout from "./MainLayout.astro";
 import Container from "../components/common/Container.astro";
 import Image from "astro/components/Image.astro";
+import LinkButton from "../components/ui/LinkButton";
 import { RelatedServices } from "../components/services/RelatedService";
 import { ServiceGallery } from "../components/services/ServiceGallery";
 import { ServiceTestimonials } from "../components/services/ServiceTestimonials";
@@ -68,11 +69,6 @@ const structuredData = {
   <section
     class="relative py-16 md:py-24 overflow-hidden bg-gradient-to-b from-gray-50 to-white"
   >
-    <div
-      class="absolute inset-0 bg-[url('/patterns/dot-pattern.png')] opacity-[0.03]"
-    >
-    </div>
-
     <Container>
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="order-2 md:order-1">
@@ -114,18 +110,13 @@ const structuredData = {
 
             <!-- CTA Buttons -->
             <div class="flex flex-wrap gap-4 pt-4">
-              <a
-                href="#booking"
-                class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
-              >
+              <LinkButton href="/contact-us" variant="primary" client:load>
                 Book Now
-              </a>
-              <a
-                href="#gallery"
-                class="px-6 py-3 bg-white border border-gray-200 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-medium"
-              >
+              </LinkButton>
+
+              <LinkButton href="/gallery" variant="secondary" client:load>
                 View Gallery
-              </a>
+              </LinkButton>
             </div>
           </div>
         </div>

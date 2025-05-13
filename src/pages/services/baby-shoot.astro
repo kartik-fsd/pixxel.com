@@ -1,0 +1,167 @@
+---
+import ServiceDetailLayout from "../../layouts/ServiceLayoutDetails.astro";
+import { SERVICES } from "../../utils/constants";
+
+const babyService = SERVICES.find((service) => service.slug === "baby-shoot");
+
+// Additional metadata specifically for Baby Shoot service
+const serviceMetadata = {
+  metaDescription:
+    "Capture your baby's special moments with professional baby photography in Nagpur. Adorable props, gentle lighting, and a baby-friendly studio at Pixxel City.",
+  ogImage:
+    "https://images.pexels.com/photos/3933271/pexels-photo-3933271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  canonicalUrl: "https://pixxelcity.com/services/baby-shoot",
+  keywords:
+    "baby photoshoot nagpur, newborn photography, baby portfolio shoot, child photo studio, baby-friendly photography studio",
+};
+
+// Enhance the service object with additional metadata
+const enhancedService = {
+  ...babyService,
+  ...serviceMetadata,
+  heroImage:
+    "https://images.pexels.com/photos/3933271/pexels-photo-3933271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  process: [
+    {
+      title: "Pre-Shoot Planning",
+      description:
+        "We consult with you to understand your baby's comfort needs, preferred themes, and the best timing for the shoot.",
+    },
+    {
+      title: "Setup & Prop Preparation",
+      description:
+        "Our team prepares safe, adorable sets with sanitized props and calming lights to keep your baby relaxed.",
+    },
+    {
+      title: "Gentle Photography Session",
+      description:
+        "The session is paced according to your baby’s mood and needs, with breaks for feeding, naps, or cuddles.",
+    },
+    {
+      title: "Family & Sibling Shots",
+      description:
+        "We also capture beautiful moments with parents and siblings, creating a complete memory collection.",
+    },
+    {
+      title: "Final Selection & Delivery",
+      description:
+        "You’ll receive a curated gallery of professionally edited photos, perfect for keepsakes, prints, or digital sharing.",
+    },
+  ],
+};
+---
+
+<ServiceDetailLayout service={enhancedService}>
+  <Fragment slot="service-content">
+    <h3>Capture Your Baby’s Precious Moments</h3>
+
+    <p>
+      A baby photoshoot is more than just pictures—it’s a timeless memory of
+      your little one’s earliest days. At Pixxel City Studio, we offer a
+      baby-friendly environment designed to capture genuine smiles, curious
+      looks, and cuddly moments in a safe, gentle setting.
+    </p>
+
+    <p>
+      From newborn sessions to toddler milestones, our team specializes in
+      creating beautiful visuals that you’ll cherish for a lifetime. Every shoot
+      is customized for your baby’s comfort and your family’s preferences.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+      <img
+        src="https://images.pexels.com/photos/3933271/pexels-photo-3933271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Adorable baby photoshoot with props"
+        class="rounded-lg"
+      />
+      <img
+        src="https://images.pexels.com/photos/1648376/pexels-photo-1648376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Newborn photography setup"
+        class="rounded-lg"
+      />
+    </div>
+
+    <h3>Our Baby-Friendly Studio Experience</h3>
+
+    <h4>Comfort First</h4>
+
+    <p>
+      Our studio is temperature-controlled and sanitized, with soft lighting and
+      soothing music to keep your baby comfortable. We follow a baby-first
+      approach, taking breaks whenever needed.
+    </p>
+
+    <h4>Themed Setups & Props</h4>
+
+    <p>
+      Choose from a variety of charming themes—from dreamy clouds to playful
+      toys. We provide all props and backdrops, ensuring every frame looks
+      perfect and adorable.
+    </p>
+
+    <h4>Safety is Our Priority</h4>
+
+    <p>
+      We use baby-safe materials, trained staff, and non-intrusive techniques.
+      Whether your baby is a newborn or a curious toddler, our team ensures
+      they’re in good hands throughout the session.
+    </p>
+
+    <blockquote
+      class="bg-primary/5 p-6 rounded-lg my-8 border-l-4 border-primary"
+    >
+      <p class="text-lg italic">
+        "Pixxel City Studio made our baby’s first photoshoot a joy. The team was
+        incredibly patient, and the photos came out better than we could have
+        imagined. Highly recommended for new parents!"
+      </p>
+      <cite class="block mt-4 font-medium">— A happy mom from Nagpur</cite>
+    </blockquote>
+
+    <h3>Perfect for Milestones & Memories</h3>
+
+    <h4>Newborn Sessions (0–3 Months)</h4>
+
+    <p>
+      Capture those sleepy poses and tiny details in a peaceful setting that
+      respects your baby’s rhythm and safety needs.
+    </p>
+
+    <h4>Half-Year Celebrations (6 Months)</h4>
+
+    <p>
+      Document your baby’s growing personality with playful, colorful themes
+      that show off their budding curiosity and charm.
+    </p>
+
+    <h4>First Birthday Shoots (12 Months)</h4>
+
+    <p>
+      Celebrate your baby’s first year with a joyful shoot—complete with
+      cakesmash, balloons, and themed decorations for unforgettable birthday
+      memories.
+    </p>
+
+    <h3>Booking & Packages</h3>
+
+    <p>
+      Baby shoot sessions are typically 3–4 hours to allow time for feeding,
+      breaks, and setup. Packages include multiple themes, family photos, and
+      edited images. You’re welcome to bring your own outfit choices or favorite
+      toys.
+    </p>
+
+    <p>
+      To ensure a smooth session, we recommend pre-booking and sharing your
+      preferences in advance. Our team will guide you through every step—from
+      planning to delivery.
+    </p>
+
+    <h3>Let’s Create Memories Together</h3>
+
+    <p>
+      Book your baby’s photoshoot today and preserve these fleeting moments
+      forever. Reach out to us for package details and date availability.
+    </p>
+  </Fragment>
+</ServiceDetailLayout>

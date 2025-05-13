@@ -14,7 +14,7 @@ interface PricingPlan {
 const actualPricingPlans: PricingPlan[] = [
   {
     name: "Silver",
-    price: { morning: "₹6,000", evening: "₹8,000" },
+    price: { morning: "₹5,999", evening: "₹7,999" },
     duration: "4 Hour Shoot",
     features: [
       "Basic Studio Access",
@@ -25,7 +25,7 @@ const actualPricingPlans: PricingPlan[] = [
   },
   {
     name: "Gold",
-    price: "₹10,000*",
+    price: "₹9,999*",
     duration: "6 Hour Shoot",
     features: [
       "Full Studio Access",
@@ -38,7 +38,7 @@ const actualPricingPlans: PricingPlan[] = [
   },
   {
     name: "Diamond",
-    price: "₹12,000*",
+    price: "₹11,999*",
     duration: "8 Hour Shoot",
     features: [
       "Premium Studio Access",
@@ -50,7 +50,7 @@ const actualPricingPlans: PricingPlan[] = [
   },
   {
     name: "Premium",
-    price: "₹16,000*",
+    price: "₹15,999*",
     duration: "12 Hour Shoot",
     features: [
       "Professional Props & Equipment",

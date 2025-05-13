@@ -80,6 +80,8 @@ const setDetailSEO = createSetDetailSEO(set);
     </section>
 
     <Testimonials client:load />
+
+    <!-- Now using the dynamic RelatedSets component with client:load directive -->
     <RelatedSets client:load currentSetId={set.id} />
   </div>
 </MainLayout>

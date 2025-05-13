@@ -1,35 +1,37 @@
-import { ArrowRight } from "lucide-react";
+import { Badge } from "./Badge";
 
 interface SetCardProps {
+  id: string;
   title: string;
   imageUrl: string;
   category: string;
-  onClick?: () => void;
 }
 
-export function SetCard({ title, imageUrl, category, onClick }: SetCardProps) {
+export function SetCard({ id, title, imageUrl, category }: SetCardProps) {
   return (
-    <div
-      onClick={onClick}
-      className="group cursor-pointer overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:-translate-y-1"
-    >
-      <div className="aspect-[4/3] overflow-hidden">
-        <img
-          src={imageUrl}
-          alt={title}
-          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-        />
-      </div>
-      <div className="p-6">
-        <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">
-          {category}
-        </span>
-        <h3 className="mt-3 text-xl font-semibold">{title}</h3>
-        <div className="mt-4 flex items-center text-primary">
-          View Details
-          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+    <a href={`/venues/${id}`} className="group">
+      <div className="bg-card rounded-xl overflow-hidden border border-border shadow-sm transition-all duration-300 hover:shadow-md">
+        <div className="relative h-[260px] w-full">
+          <img
+            src={imageUrl}
+            alt={`${title} photography set at Pixxel City Nagpur`}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <Badge className="absolute top-4 left-4 bg-background/80 backdrop-blur-sm">
+            {category}
+          </Badge>
+        </div>
+        <div className="p-5">
+          <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+            {title}
+          </h3>
+          <div className="flex items-center mt-2">
+            <span className="text-sm text-muted-foreground">
+              Premium Photography Space
+            </span>
+          </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
