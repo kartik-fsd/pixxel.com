@@ -90,7 +90,7 @@ const sets = [
 
                 <!-- Changed to an anchor tag with proper href -->
                 <a 
-                  href={`/venues/${set.title.toLowerCase().replace(/\s+/g, '-')}`}
+                  href={`/sets/${set.title.toLowerCase().replace(/\s+/g, '-')}`}
                   class="w-full inline-flex items-center justify-center rounded-xl bg-secondary px-5 py-3 text-sm font-medium
                   text-secondary-foreground/80 transition-all duration-500 ease-out border border-primary/90 hover:bg-gradient-to-r hover:from-primary/90 hover:to-primary
                   hover:text-white group cursor-pointer z-10"
@@ -111,8 +111,8 @@ const sets = [
     <div class="mt-16 text-center">
       <!-- Standard approach with correct attributes -->
       <a 
-        href={`/venues`}
-        class="venues-link inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-gradient-to-r from-primary/90 to-primary text-white text-sm font-medium transition-all duration-500 ease-out hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 cursor-pointer z-50"
+        href={`/sets`}
+        class="sets-link inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-gradient-to-r from-primary/90 to-primary text-white text-sm font-medium transition-all duration-500 ease-out hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 cursor-pointer z-50"
       >
         Explore All Sets
         <svg class="w-4 h-4 ml-2 transition-transform duration-500 ease-out group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -136,7 +136,7 @@ const sets = [
   }
 
   /* Make sure pointer events work */
-  .venues-link {
+  .sets-link {
     cursor: pointer !important;
     position: relative !important;
     z-index: 50 !important;

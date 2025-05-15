@@ -49,7 +49,7 @@ export const packagesSEO: SEOProps = createSEO({
                 }
             ],
             "priceCurrency": "INR",
-            "priceRange": "₹6,000 - ₹16,000"
+            "priceRange": "₹8,000 - ₹16,000"
         },
         "amenityFeature": [
             {

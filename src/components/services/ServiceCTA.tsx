@@ -36,14 +36,36 @@ export function ServiceCTA({ service }: ServiceCTAProps) {
     e.preventDefault();
     setFormStatus("submitting");
 
-    // Simulate form submission
-    setTimeout(() => {
-      try {
-        // In a real application, you would send the data to your server here
-        console.log("Form submitted:", formData);
+    // Create formData object
+    const apiFormData = new FormData();
+
+    // Add your Web3Forms access key - you'll need to get this from web3forms.com
+    apiFormData.append("access_key", "bc113fb2-f3e6-4694-b772-88ca36872cb7");
+
+    // Add form fields
+    Object.entries(formData).forEach(([key, value]) => {
+      apiFormData.append(key, value);
+    });
+
+    // Add additional fields for customization
+    apiFormData.append(
+      "subject",
+      `New Booking Request: ${service.title} Session`
+    );
+    apiFormData.append("from_name", "Photography Booking System");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: apiFormData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
         setFormStatus("success");
 
-        // Reset form after 3 seconds
+        // Reset form after success (after 3 seconds)
         setTimeout(() => {
           setFormData({
             name: "",
@@ -54,11 +76,13 @@ export function ServiceCTA({ service }: ServiceCTAProps) {
           });
           setFormStatus("idle");
         }, 3000);
-      } catch (error) {
-        console.error("Error submitting form:", error);
-        setFormStatus("error");
+      } else {
+        throw new Error(data.message || "Something went wrong");
       }
-    }, 1500);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setFormStatus("error");
+    }
   };
 
   return (
@@ -137,6 +161,14 @@ export function ServiceCTA({ service }: ServiceCTAProps) {
           </h3>
 
           <form onSubmit={handleSubmit} className="space-y-5">
+            {/* Honeypot field to prevent spam */}
+            <input
+              type="checkbox"
+              name="botcheck"
+              className="hidden"
+              style={{ display: "none" }}
+            />
+
             <div>
               <label
                 htmlFor="name"

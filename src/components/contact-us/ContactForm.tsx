@@ -29,12 +29,32 @@ export function ContactForm() {
     e.preventDefault();
     setFormState("submitting");
 
-    // Simulate form submission with timeout
-    setTimeout(() => {
-      try {
-        // We're simulating success here - in a real app, you would send the data to a server
+    // Create form data for Web3Forms
+    const apiFormData = new FormData();
+
+    // Add your Web3Forms access key - you'll need to get this from web3forms.com
+    apiFormData.append("access_key", "bc113fb2-f3e6-4694-b772-88ca36872cb7");
+
+    // Add form fields
+    Object.entries(formData).forEach(([key, value]) => {
+      apiFormData.append(key, value);
+    });
+
+    // Add additional fields for customization
+    apiFormData.append("from_name", "Contact Form");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: apiFormData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
         setFormState("success");
-        // Reset form after success
+
+        // Reset form after success (after 3 seconds)
         setTimeout(() => {
           setFormData({
             name: "",
@@ -45,10 +65,13 @@ export function ContactForm() {
           });
           setFormState("idle");
         }, 3000);
-      } catch (error) {
-        setFormState("error");
+      } else {
+        throw new Error(data.message || "Something went wrong");
       }
-    }, 1500);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setFormState("error");
+    }
   };
 
   const inputClasses =
@@ -95,6 +118,14 @@ export function ContactForm() {
       </motion.h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
+        {/* Honeypot field to prevent spam */}
+        <input
+          type="checkbox"
+          name="botcheck"
+          className="hidden"
+          style={{ display: "none" }}
+        />
+
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 gap-6"
           variants={itemVariants}

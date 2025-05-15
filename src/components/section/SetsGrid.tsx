@@ -189,7 +189,7 @@ export function SetsGrid({ sets, categories, featuredSets }: SetsGridProps) {
 
   // Function to generate links with current pagination state
   const generateSetLink = (setId: string) => {
-    return `/venues/${setId}`;
+    return `/sets/${setId}`;
   };
 
   return (

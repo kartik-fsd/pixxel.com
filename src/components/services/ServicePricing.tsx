@@ -14,7 +14,7 @@ interface PricingPlan {
 const actualPricingPlans: PricingPlan[] = [
   {
     name: "Silver",
-    price: { morning: "₹5,999", evening: "₹7,999" },
+    price: "₹7,999",
     duration: "4 Hour Shoot",
     features: [
       "Basic Studio Access",

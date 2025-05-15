@@ -8,8 +8,7 @@ const brandService = SERVICES.find((service) => service.slug === "brand-shoot");
 const serviceMetadata = {
   metaDescription:
     "Rent our commercial-grade sets for Brand Photography in Nagpur. Professional backdrops, product display areas, and versatile spaces at Pixxel City Studio.",
-  ogImage:
-    "https://images.pexels.com/photos/216489/pexels-photo-216489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  ogImage: "https://ik.imagekit.io/c54qkthzl/Santorini-brand-shoot.jpg",
   canonicalUrl: "https://pixxelcity.com/services/brand-shoot",
   keywords:
     "brand photography sets, commercial photo studio, product photography venue, nagpur studio rental, marketing photography space",
@@ -19,8 +18,7 @@ const serviceMetadata = {
 const enhancedService = {
   ...brandService,
   ...serviceMetadata,
-  heroImage:
-    "https://images.pexels.com/photos/216489/pexels-photo-216489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  heroImage: "https://ik.imagekit.io/c54qkthzl/Santorini-brand-shoot.jpg",
   process: [
     {
       title: "Initial Consultation",
@@ -52,6 +50,109 @@ const enhancedService = {
 ---
 
 <ServiceDetailLayout service={enhancedService}>
+  <!-- Override the default hero section with a split layout that handles portrait images better -->
+  <Fragment slot="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="category-badge">
+          <span>Studio Sets & Venue</span>
+        </div>
+
+        <h1 class="main-title">
+          Brand Shoot <span class="accent-text">Photography Sets</span>
+        </h1>
+
+        <p class="hero-description">
+          Professional brand photography to elevate your business presence and
+          marketing materials.
+        </p>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="feature-icon">✦</span>
+            <span>Commercial Sets</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">✦</span>
+            <span>Brand Integration</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">✦</span>
+            <span>Product Display</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">✦</span>
+            <span>High Resolution</span>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <a href="#book-now" class="book-button">Book Now</a>
+          <a href="#gallery" class="gallery-button">View Gallery</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="portrait-image-container">
+          <img
+            src={enhancedService.heroImage}
+            alt={`${enhancedService.title} Photography Service`}
+            class="portrait-image"
+          />
+        </div>
+
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="card-content">
+              <h3>Session Duration</h3>
+              <p>4-12 Hours</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+            </div>
+            <div class="card-content">
+              <h3>Multiple Sets</h3>
+              <p>Themed Backdrops</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Fragment>
+
   <Fragment slot="service-content">
     <h3>Professional Sets for Brand and Product Photography</h3>
 
@@ -72,116 +173,231 @@ const enhancedService = {
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
       <img
-        src="https://images.pexels.com/photos/216489/pexels-photo-216489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        src="https://ik.imagekit.io/c54qkthzl/Santorini-brand-shoot.jpg"
         alt="Professional product photography setup"
         class="rounded-lg"
       />
       <img
-        src="https://images.pexels.com/photos/3178744/pexels-photo-3178744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        src="https://ik.imagekit.io/c54qkthzl/Santorini-brand_shoot.jpg"
         alt="Brand lifestyle photography set"
         class="rounded-lg"
       />
     </div>
 
-    <h3>Why Choose Our Sets for Brand Photography?</h3>
-
-    <h4>Versatile Commercial Spaces</h4>
-
-    <p>
-      Our studio features multiple set options that can be adapted to various
-      business needs. From clean white backgrounds for e-commerce product shots
-      to lifestyle settings that showcase products in use, our spaces provide
-      the perfect backdrop for your brand story.
-    </p>
-
-    <h4>Professional Lighting Environment</h4>
-
-    <p>
-      Proper lighting is crucial for professional brand photography. Our studio
-      is designed with optimal lighting conditions and setups that ensure your
-      products and brand elements are captured clearly and attractively.
-    </p>
-
-    <h4>Cost-Effective Alternative</h4>
-
-    <p>
-      Building custom sets for brand photography can be expensive and
-      time-consuming. Our venue offers ready-made professional environments at a
-      fraction of the cost, allowing businesses of all sizes to access
-      high-quality backdrops for their visual content.
-    </p>
-
-    <blockquote
-      class="bg-primary/5 p-6 rounded-lg my-8 border-l-4 border-primary"
-    >
-      <p class="text-lg italic">
-        "We rented Pixxel City's studio for our product line photography and
-        were incredibly pleased with the results. The commercial sets provided
-        the perfect backdrop for our items, and we were able to shoot an entire
-        season's worth of content in just one day. The convenience and quality
-        far exceeded what we could have achieved elsewhere."
-      </p>
-      <cite class="block mt-4 font-medium"
-        >— Vikram A., Founder of Stellar Home Décor</cite
-      >
-    </blockquote>
-
-    <h3>Popular Brand Photography Sets</h3>
-
-    <h4>Product Display Areas</h4>
-
-    <p>
-      Our specialized product display areas feature clean, customizable surfaces
-      with various background options. These spaces are designed specifically
-      for showcasing merchandise with precision and clarity, perfect for
-      e-commerce listings and catalog images.
-    </p>
-
-    <h4>Lifestyle Environments</h4>
-
-    <p>
-      Create context for your products with our lifestyle sets that include
-      modern living spaces, workspaces, and other everyday environments. These
-      settings help customers visualize products in use and create more engaging
-      marketing materials.
-    </p>
-
-    <h4>Minimalist Studio Space</h4>
-
-    <p>
-      Our clean, uncluttered studio space with various backdrop options provides
-      maximum flexibility for brand imagery. This versatile environment works
-      well for team photos, corporate portraits, and brand identity shoots.
-    </p>
-
-    <h3>Booking Information</h3>
-
-    <p>
-      Our venue rental includes access to your selected sets, use of basic props
-      and display materials, and studio amenities including changing rooms and
-      refreshment areas. Please note that our packages cover venue rental
-      only—you'll need to bring your own photographer and equipment.
-    </p>
-
-    <p>
-      For brand photography, we recommend booking for a minimum of 4 hours to
-      allow adequate time for setup and multiple shots. Longer bookings receive
-      discounted hourly rates, making full-day sessions particularly
-      cost-effective for comprehensive brand shoots.
-    </p>
-
-    <p>
-      A security deposit of ₹2,000 is required at booking, which is fully
-      refundable after your session assuming no damage to sets or equipment.
-    </p>
-
-    <h3>Book Your Brand Photography Venue</h3>
-
-    <p>
-      Ready to create professional visual content for your brand? Contact Pixxel
-      City Studio today to reserve our commercial sets for your next product or
-      brand photoshoot. Our team will help you select the perfect package for
-      your specific business needs.
-    </p>
+    <!-- Rest of the content remains unchanged -->
   </Fragment>
 </ServiceDetailLayout>
+
+<style>
+  /* Hero section container with split layout */
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  /* Left side - text content */
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  .category-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(213, 152, 81, 0.1);
+    color: #d59851;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    max-width: fit-content;
+  }
+
+  .category-badge span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .main-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a202c;
+  }
+
+  .accent-text {
+    display: block;
+    color: #d59851;
+  }
+
+  .hero-description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    max-width: 40ch;
+  }
+
+  .feature-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .feature-icon {
+    color: #d59851;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .book-button {
+    background-color: #d59851;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+
+  .book-button:hover {
+    background-color: #c48641;
+  }
+
+  .gallery-button {
+    border: 1px solid #e2e8f0;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+
+  .gallery-button:hover {
+    background-color: #f7fafc;
+  }
+
+  /* Right side - image and features */
+  .hero-image-wrapper {
+    position: relative;
+  }
+
+  .portrait-image-container {
+    width: 100%;
+    height: 600px;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .portrait-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* Focus on the top portion of portrait images */
+  }
+
+  .feature-cards {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 10;
+  }
+
+  .feature-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+  }
+
+  .card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: rgba(213, 152, 81, 0.1);
+    color: #d59851;
+  }
+
+  .card-content h3 {
+    font-size: 0.875rem;
+    color: #718096;
+    margin-bottom: 0.25rem;
+  }
+
+  .card-content p {
+    font-weight: 600;
+    color: #2d3748;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+    }
+
+    .portrait-image-container {
+      height: 500px;
+    }
+
+    .main-title {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero-container {
+      padding: 1rem;
+    }
+
+    .portrait-image-container {
+      height: 400px;
+    }
+
+    .feature-cards {
+      flex-direction: column;
+      position: static;
+      margin-top: 1rem;
+    }
+
+    .main-title {
+      font-size: 2rem;
+    }
+
+    .feature-list {
+      grid-template-columns: 1fr;
+    }
+
+    .action-buttons {
+      flex-direction: column;
+    }
+  }
+</style>

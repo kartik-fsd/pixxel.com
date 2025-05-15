@@ -23,12 +23,12 @@ import { CONTACT, COMPANY } from "../utils/constants";
             >Home</a
           >
           <a
-            href="/services"
-            class="text-sm text-muted-foreground hover:text-primary">Services</a
+            href="/gallery"
+            class="text-sm text-muted-foreground hover:text-primary">Gallery</a
           >
           <a
-            href="/venues"
-            class="text-sm text-muted-foreground hover:text-primary">Venues</a
+            href="/sets"
+            class="text-sm text-muted-foreground hover:text-primary">Sets</a
           >
           <a
             href="/packages"
@@ -51,6 +51,13 @@ import { CONTACT, COMPANY } from "../utils/constants";
           >
             <Phone className="h-4 w-4" />
             <span>+91 {CONTACT.phone}</span>
+          </a>
+          <a
+            href={`tel:${CONTACT.phone}`}
+            class="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary"
+          >
+            <Phone className="h-4 w-4" />
+            <span>+91 {CONTACT.secondphone}</span>
           </a>
           <a
             href={`mailto:${CONTACT.email}`}

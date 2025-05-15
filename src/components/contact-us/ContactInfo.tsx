@@ -16,7 +16,7 @@ export function ContactInfo() {
     {
       icon: <Phone className="w-6 h-6 text-primary" />,
       title: "Phone Number",
-      content: "6261180073",
+      content: ["6261180073", "8983407003"],
       action: {
         text: "Call Us",
         href: "tel:6261180073",
@@ -34,8 +34,7 @@ export function ContactInfo() {
     {
       icon: <Clock className="w-6 h-6 text-primary" />,
       title: "Working Hours",
-      content:
-        "Monday - Friday: 9AM - 6PM\nSaturday: 10AM - 4PM\nSunday: Closed",
+      content: "Monday - Sunday : 9AM - 6PM",
       action: null,
     },
   ];
@@ -77,7 +76,6 @@ export function ContactInfo() {
       >
         Contact Information
       </motion.h2>
-
       <motion.div className="space-y-8" variants={containerVariants}>
         {contactItems.map((item, index) => (
           <motion.div
@@ -96,9 +94,19 @@ export function ContactInfo() {
               <h3 className="font-medium text-lg text-gray-900">
                 {item.title}
               </h3>
-              <p className="text-muted-foreground whitespace-pre-line">
-                {item.content}
-              </p>
+              {Array.isArray(item.content) ? (
+                <p className="text-muted-foreground">
+                  {item.content.map((line, i) => (
+                    <span key={i} className="block">
+                      {line}
+                    </span>
+                  ))}
+                </p>
+              ) : (
+                <p className="text-muted-foreground whitespace-pre-line">
+                  {item.content}
+                </p>
+              )}
               {item.action && (
                 <a
                   href={item.action.href}

@@ -58,15 +58,6 @@ export const SERVICES: Service[] = [
         image: "https://ik.imagekit.io/c54qkthzl/Lighthouse-6.JPG?updatedAt=1737905436997",
         icon: Star,
         features: ["Cute Props", "Safe Environment", "Gentle Lighting", "Experienced Photographers"]
-    },
-    {
-        id: 6,
-        slug: "music-video",
-        title: "Music Video",
-        description: "Professional sets and backdrops for music video production with premium lighting and effects.",
-        image: "https://images.pexels.com/photos/3045398/pexels-photo-3045398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        icon: Music,
-        features: ["Multiple Themed Sets", "Special Lighting Effects", "Sound Setup", "Green Screen Available"]
     }
 ];
 
@@ -85,6 +76,7 @@ export const COMPANY = {
 export const CONTACT = {
     address: "Back Side Of Advani Dhaba, Pixxel City, Umred Rd, Wadegaon (kale), Maharashtra 441204",
     phone: "6261180073",
+    secondphone: "8983407003",
     email: "d.aakruti@yahoo.com",
     instagram: "https://www.instagram.com/pixxelcity",
     facebook: "https://www.facebook.com/pixxelcity",

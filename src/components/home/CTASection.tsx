@@ -42,8 +42,8 @@ const CTASection = () => {
             {/* Pricing and Booking Button */}
             <div className="flex flex-col items-center gap-6">
               <div className="flex items-center gap-2 text-white">
-                <span className="text-2xl font-bold">Starting at ₹5,999</span>
-                <span className="text-gray-400 line-through">₹7,999</span>
+                <span className="text-2xl font-bold">Starting at ₹7,999</span>
+                <span className="text-gray-400 line-through">₹9,999</span>
               </div>
 
               <motion.button

@@ -3,9 +3,9 @@ import { createSEO } from './utils';
 
 
 export const venueSEO: SEOProps = createSEO({
-    title: "Premium Photography Sets & Venues | Pixxel City Nagpur",
+    title: "Premium Photography Sets| Pixxel City Nagpur",
     description: "Explore our diverse collection of premium photography sets in Nagpur - from luxury indoor studios to themed outdoor locations. Featuring Light Room, Mexican Street, Royale Touch, and more unique settings.",
-    keywords: "photography sets nagpur, photo shoot locations, themed photography venues, indoor photo studio, outdoor photography sets, luxury photo venues, pixxel city sets, pre-wedding shoot locations nagpur",
+    keywords: "photography sets nagpur, photo shoot locations, themed photography sets, indoor photo studio, outdoor photography sets, luxury photo sets, pixxel city sets, pre-wedding shoot locations nagpur",
     jsonLd: {
         "@context": "https://schema.org",
         "@type": "CreativeWorkSeries",
@@ -81,7 +81,7 @@ export const venueSEO: SEOProps = createSEO({
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Luxury Sets",
-                "description": "High-end photography venues with premium amenities",
+                "description": "High-end photography sets with premium amenities",
                 "numberOfItems": 1
             },
             {

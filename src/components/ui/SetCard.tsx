@@ -9,7 +9,7 @@ interface SetCardProps {
 
 export function SetCard({ id, title, imageUrl, category }: SetCardProps) {
   return (
-    <a href={`/venues/${id}`} className="group">
+    <a href={`/sets/${id}`} className="group">
       <div className="bg-card rounded-xl overflow-hidden border border-border shadow-sm transition-all duration-300 hover:shadow-md">
         <div className="relative h-[260px] w-full">
           <img

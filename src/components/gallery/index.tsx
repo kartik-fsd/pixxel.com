@@ -52,7 +52,7 @@ const Gallery: React.FC = () => {
             animate="animate"
             className="text-5xl md:text-7xl font-bold text-center mb-6"
           >
-            Elite Photography Venues
+            Elite Photography Sets
           </motion.h1>
           <motion.p
             variants={fadeInUp}
