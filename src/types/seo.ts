@@ -4,5 +4,5 @@ export interface SEOProps {
     keywords?: string;
     ogImage?: string;
     canonical?: string;
-    jsonLd?: object;
+    jsonLd?: Record<string, any>;
 }

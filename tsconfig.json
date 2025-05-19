@@ -11,6 +11,8 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "target": "ESNext"
   }
 }

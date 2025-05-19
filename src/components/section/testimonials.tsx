@@ -3,14 +3,14 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    text: "The Light Room exceeded all our expectations. The attention to detail and professional support made our shoot absolutely perfect.",
-    author: "Sarah Johnson",
-    role: "Fashion Photographer",
+    text: "I love love love the place.. best for all kinda shoots..especially pre-wedding.. i have done modelling shoots there .. the host is really nice.. the services are great.. most of all the the sets are just amazing .. 10 out of 10",
+    author: "Saurabh Vidyadhar",
+    role: "Modelling shoot",
   },
   {
-    text: "Best studio I've worked with in years. The equipment quality and lighting options are unmatched.",
-    author: "Michael Chen",
-    role: "Commercial Photographer",
+    text: "Lovely Sets, Perfect locations, responsible and cooperative staff.",
+    author: "Kartik Talpekar ",
+    role: "Pre-Wedding client",
   },
 ];
 
