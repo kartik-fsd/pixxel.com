@@ -1,0 +1,35 @@
+---
+import { getImageKitUrl } from "../utils/imagekit";
+
+interface Props {
+  path: string;
+  alt: string;
+  width?: number | string;
+  height?: number | string;
+  className?: string;
+  loading?: "lazy" | "eager";
+  transformations?: Record<string, string | number>;
+}
+
+const {
+  path,
+  alt,
+  width,
+  height,
+  className = "",
+  loading = "lazy",
+  transformations = {},
+} = Astro.props;
+
+// Generate image URL with transformations
+const imageUrl = getImageKitUrl(path, transformations);
+---
+
+<img
+  src={imageUrl}
+  alt={alt}
+  width={width}
+  height={height}
+  class={className}
+  loading={loading}
+/>
