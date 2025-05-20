@@ -1,37 +1,10 @@
 // @ts-check
-// @ts-ignore
 import { defineConfig } from 'astro/config';
-// @ts-ignore
 import tailwind from '@astrojs/tailwind';
-// @ts-ignore
 import react from '@astrojs/react';
-// @ts-ignore
 import sitemap from '@astrojs/sitemap';
 
 // Photography set IDs from your data
-// @ts-ignore
-const photoSetIds = [
-  "arabian-elegance", "bedroom-set", "blue-jodhpur", "cozy-library",
-  "crimson-grace", "dark-room", "date-night", "floral-arch",
-  "french-cafe", "glass-house", "indo-ethnic", "playful-pantry",
-  "rustic-arches", "retro-studio", "elegant-bar", "luminous-pathway",
-  "london-street", "majestic-flora", "melody-piano", "monochrome",
-  "palmparadise", "piece-of-greece", "royal-swing", "royal-touch",
-  "rustic-archs", "santorini", "starry-walkaway", "the-crystal-court",
-  "the-rug-royalty", "twilight-charm", "utopian-street"
-];
-// @ts-check
-// @ts-ignore
-import { defineConfig } from 'astro/config';
-// @ts-ignore
-import tailwind from '@astrojs/tailwind';
-// @ts-ignore
-import react from '@astrojs/react';
-// @ts-ignore
-import sitemap from '@astrojs/sitemap';
-
-// Photography set IDs from your data
-// @ts-ignore
 const photoSetIds = [
   "arabian-elegance", "bedroom-set", "blue-jodhpur", "cozy-library",
   "crimson-grace", "dark-room", "date-night", "floral-arch",
@@ -57,13 +30,16 @@ export default defineConfig({
     tailwind({ applyBaseStyles: false }),
     react(),
     sitemap({
+      // Since you've removed the custom sitemap.xml.ts,
+      // we'll let the integration handle everything
 
+      // Include additional pages that might not be detected automatically
       customPages: [
         // Dynamic set pages
-        ...photoSetIds.map(id => `/sets/${id}`),
+        ...photoSetIds.map(id => `https://pixxelcity.com/sets/${id}`),
 
         // Service pages
-        ...servicePageIds.map(id => `/services/${id}`)
+        ...servicePageIds.map(id => `https://pixxelcity.com/services/${id}`)
       ],
 
       // Set default change frequency and priority
