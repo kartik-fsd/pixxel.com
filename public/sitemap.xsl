@@ -14,7 +14,7 @@
         <html>
             <head>
                 <title>Pixxel City Photography - XML Sitemap</title>
-                <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+                <link rel="icon" type="image/x-icon" href="/pixelcity_.png" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <style>
                     body {
