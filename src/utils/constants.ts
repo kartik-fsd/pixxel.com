@@ -37,7 +37,7 @@ export const SERVICES: Service[] = [
         slug: "maternity",
         title: "Maternity Shoot",
         description: "Document your beautiful journey into motherhood with our specialized maternity photography.",
-        image: "https://images.pexels.com/photos/18151037/pexels-photo-18151037/free-photo-of-man-hugging-pregnant-woman-in-pink-dress.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        image: "https://ik.imagekit.io/c54qkthzl/palm-paradise-maternity-shoot.jpg",
         icon: Baby,
         features: ["Comfortable Environment", "Safe Props", "Multiple Outfits", "Natural Lighting"]
     },
