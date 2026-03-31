@@ -15,16 +15,16 @@ const defaultFAQs: FAQItem[] = [
     answer:
       "We recommend booking at least 2-4 weeks in advance to ensure availability, especially during weekends and peak seasons. For special dates or holidays, booking 1-2 months ahead is advisable.",
   },
-  {
-    question: "How many photos will I receive?",
-    answer:
-      "Our standard packages include 50+ professionally edited photos. The exact number varies depending on the package chosen, but we always ensure you receive a comprehensive collection that tells your story beautifully.",
-  },
-  {
-    question: "How long until I receive my photos?",
-    answer:
-      "You'll receive a sneak peek of 5-10 photos within 48 hours after your shoot. The complete set of edited images will be delivered within 7-10 business days via a private online gallery.",
-  },
+  // {
+  //   question: "How many photos will I receive?",
+  //   answer:
+  //     "Our standard packages include 50+ professionally edited photos. The exact number varies depending on the package chosen, but we always ensure you receive a comprehensive collection that tells your story beautifully.",
+  // },
+  // {
+  //   question: "How long until I receive my photos?",
+  //   answer:
+  //     "You'll receive a sneak peek of 5-10 photos within 48 hours after your shoot. The complete set of edited images will be delivered within 7-10 business days via a private online gallery.",
+  // },
   {
     question: "Can I bring outfit changes?",
     answer:
@@ -40,17 +40,17 @@ const defaultFAQs: FAQItem[] = [
     answer:
       "We understand plans can change. You can reschedule your shoot with at least 48 hours notice at no additional cost. Last-minute reschedules (less than 48 hours) may incur a small fee to cover operational costs.",
   },
-  {
-    question: "Do you travel to locations outside your studio?",
-    answer:
-      "Yes, we offer location shoots throughout Nagpur and surrounding areas. Travel fees may apply depending on the distance. We're also available for destination shoots with appropriate travel arrangements.",
-  },
-  {
-    question:
-      "Can I purchase additional edited photos beyond what's included in my package?",
-    answer:
-      "Yes, additional edited photos can be purchased individually or in bundles. We'll present all the best images from your shoot in a private gallery where you can select any extras you'd like.",
-  },
+  // {
+  //   question: "Do you travel to locations outside your studio?",
+  //   answer:
+  //     "Yes, we offer location shoots throughout Nagpur and surrounding areas. Travel fees may apply depending on the distance. We're also available for destination shoots with appropriate travel arrangements.",
+  // },
+  // {
+  //   question:
+  //     "Can I purchase additional edited photos beyond what's included in my package?",
+  //   answer:
+  //     "Yes, additional edited photos can be purchased individually or in bundles. We'll present all the best images from your shoot in a private gallery where you can select any extras you'd like.",
+  // },
 ];
 
 interface ServiceFAQProps {
